@@ -1,0 +1,191 @@
+#  NOTE(koekeishiya): A list of all built-in modifier and literal keywords can
+#                     be found at https://github.com/koekeishiya/skhd/issues/1
+#
+#                     A hotkey is written according to the following rules:
+#
+#                       hotkey       = <mode> '<' <action> | <action>
+#
+#                       mode         = 'name of mode' | <mode> ',' <mode>
+#
+#                       action       = <keysym> '[' <proc_map_lst> ']' | <keysym> '->' '[' <proc_map_lst> ']'
+#                                      <keysym> ':' <command>          | <keysym> '->' ':' <command>
+#                                      <keysym> ';' <mode>             | <keysym> '->' ';' <mode>
+#
+#                       keysym       = <mod> '-' <key> | <key>
+#
+#                       mod          = 'modifier keyword' | <mod> '+' <mod>
+#
+#                       key          = <literal> | <keycode>
+#
+#                       literal      = 'single letter or built-in keyword'
+#
+#                       keycode      = 'apple keyboard kVK_<Key> values (0x3C)'
+#
+#                       proc_map_lst = * <proc_map>
+#
+#                       proc_map     = <string> ':' <command> | <string>     '~' |
+#                                      '*'      ':' <command> | '*'          '~'
+#
+#                       string       = '"' 'sequence of characters' '"'
+#
+#                       command      = command is executed through '$SHELL -c' and
+#                                      follows valid shell syntax. if the $SHELL environment
+#                                      variable is not set, it will default to '/bin/bash'.
+#                                      when bash is used, the ';' delimeter can be specified
+#                                      to chain commands.
+#
+#                                      to allow a command to extend into multiple lines,
+#                                      prepend '\' at the end of the previous line.
+#
+#                                      an EOL character signifies the end of the bind.
+#
+#                       ->           = keypress is not consumed by skhd
+#
+#                       *            = matches every application not specified in <proc_map_lst>
+#
+#                       ~            = application is unbound and keypress is forwarded per usual, when specified in a <proc_map>
+#
+#  NOTE(koekeishiya): A mode is declared according to the following rules:
+#
+#                       mode_decl = '::' <name> '@' ':' <command> | '::' <name> ':' <command> |
+#                                   '::' <name> '@'               | '::' <name>
+#
+#                       name      = desired name for this mode,
+#
+#                       @         = capture keypresses regardless of being bound to an action
+#
+#                       command   = command is executed through '$SHELL -c' and
+#                                   follows valid shell syntax. if the $SHELL environment
+#                                   variable is not set, it will default to '/bin/bash'.
+#                                   when bash is used, the ';' delimeter can be specified
+#                                   to chain commands.
+#
+#                                   to allow a command to extend into multiple lines,
+#                                   prepend '\' at the end of the previous line.
+#
+#                                   an EOL character signifies the end of the bind.
+
+# add an on_enter command to the default mode
+# :: default : chunkc border::color 0xff775759
+#
+# defines a new mode 'test' with an on_enter command, that captures keypresses
+# :: test @ : chunkc border::color 0xff24ccaa
+#
+# from 'default' mode, activate mode 'test'
+# cmd - x ; test
+#
+# from 'test' mode, activate mode 'default'
+# test < cmd - x ; default
+#
+# launch a new terminal instance when in either 'default' or 'test' mode
+# default, test < cmd - return : open -na /Applications/Terminal.app
+
+# application specific bindings
+#
+# cmd - n [
+#     "kitty"       : echo "hello kitty"
+#     *             : echo "hello everyone"
+#     "qutebrowser" : echo "hello qutebrowser"
+#     "terminal"    ~
+#     "finder"      : false
+# ]
+
+# specify a file that should be included as an additional config-file.
+# treated as an absolutepath if the filename begins with '/' otherwise
+# the file is relative to the path of the config-file it was loaded from.
+#
+# .load "/Users/Koe/.config/partial_skhdrc"
+# .load "partial_skhdrc"
+
+# prevent skhd from monitoring events for specific applications.
+#
+# .blacklist [
+#    "kitty"
+#    "terminal"
+
+
+
+#    "qutebrowser"
+# ]
+
+# open terminal, blazingly fast compared to iTerm/Hyper
+cmd - return : open /Applications/iTerm.app;
+cmd + shift - return : open /Applications/Firefox.app
+
+####### Shortcut Hotkeys #############
+
+# restart Yabi, SpaceBar, and SKHD
+alt + shift - r : \
+    launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"; \
+    skhd --reload
+
+
+# alternatively, use the arrow keys
+
+
+
+# # mirror tree y-axis
+
+# balance size of windows
+alt + shift - e : yabai -m space --balance
+
+# increase window size
+alt + shift - a : yabai -m window --resize left:-20:0
+alt + shift - s : yabai -m window --resize bottom:0:20
+alt + shift - w : yabai -m window --resize top:0:-20
+alt + shift - d : yabai -m window --resize right:20:0
+
+# decrease window size
+cmd + shift - a : yabai -m window --resize left:20:0
+cmd + shift - s : yabai -m window --resize bottom:0:-20
+cmd + shift - w : yabai -m window --resize top:0:20
+cmd + shift - d : yabai -m window --resize right:-20:0
+
+# change layout of desktop
+alt - e : yabai -m space --layout bsp
+alt - s : yabai -m space --layout float
+
+# float / unfloat window and center on screen
+#alt - t : yabai -m window --toggle float;\
+#          yabai -m window --grid 4:4:1:1:2:2
+# float / unfloat window and leave in its current location
+alt + shift - space : yabai -m window --toggle float
+#alt + ctrl - space : yabai -m window --toggle float
+
+# make floating window fill screen
+alt + cmd - up     : yabai -m window --grid 1:1:0:0:1:1
+
+# make floating window fill left-half of screen
+alt + cmd - left   : yabai -m window --grid 1:2:0:0:1:1
+
+# make floating window fill right-half of screen
+alt + cmd - right  : yabai -m window --grid 1:2:1:0:1:1
+
+# create desktop, move window and follow focus
+alt + shift + cmd - n : yabai -m space --create;\
+                 index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')"; \
+                 yabai -m window --space "${index}";\
+                 yabai -m space --focus "${index}"
+
+# create desktop, move window and stay in current workspace
+alt + shift - n : yabai -m space --create;\
+                  index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')"; \
+                  yabai -m window --space "${index}"
+
+# create desktop and follow focus
+# Note: script fails when workspace is empty due to Yabai not reporting the workspace (bug?)
+#       best to use the create + move window command instead of creating a blank window
+alt - n : yabai -m space --create;\
+                  index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')"; \
+                  yabai -m space --focus "${index}"
+
+# destroy desktop
+alt + cmd - w : yabai -m space --destroy
+
+
+
+
+# enter fullscreen mode for the focused container
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle window native fullscreen
