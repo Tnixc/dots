@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "Fira Code Retina Nerd Font Complete Mono",
+        "color" : "#FFFFFFAD"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Inter",
+        "color" : "#BE96F0FF"
+      },
+      "backgroundSelected" : "#7FA3EEBE",
+      "text" : {
+        "size" : 17,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Inter",
+        "color" : "#FFFFFFE5"
+      },
+      "iconPaddingHorizontal" : 13,
+      "roundness" : 4,
+      "paddingVertical" : 6,
+      "iconSize" : 30
+    },
+    "search" : {
+      "backgroundSelected" : "#7FA3EE50",
+      "paddingHorizontal" : 8,
+      "spacing" : 1,
+      "text" : {
+        "size" : 31,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Inter",
+        "color" : "#FFFFFFFF"
+      },
+      "background" : "#1C1C28FF",
+      "roundness" : 16,
+      "paddingVertical" : 0
+    },
+    "window" : {
+      "color" : "#1C1C28FF",
+      "paddingHorizontal" : 0,
+      "width" : 925,
+      "borderPadding" : 2,
+      "borderColor" : "#9DD38FFF",
+      "blur" : 40,
+      "roundness" : 11,
+      "paddingVertical" : 0
+    },
+    "credit" : "fdsa",
+    "separator" : {
+      "color" : "#CBCBCB00",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#BE96F0FF",
+      "thickness" : 0
+    },
+    "name" : "fdas"
+  }
+}
