@@ -17,10 +17,21 @@ These are config files for:
   - I use a custom catpuccin based theme 
 ## Important
 The font I use is [FiraCode Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) 
-This is needed for most things to work
+This is needed for most things to work 
 For UI fonts I use "Product Sans" and "Inter"
 ## Firefox start page
-This page needs to be localhosted in order to work, I just run a script that cd's into the dir and runs http-server
+This page needs to be localhosted.
+To start, use [New tab override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
+Click the icon and enter `localhost:8080`, then `cd` into the folder containing the html file, then run:
+
+```npm install http-server -g```
+
+```http-server```
+
+You have to run `http-server` **EVERY TIME YOU START YOUR COMPUTER**
+
+I recommend setting up a simple .sh file that you run on every startup containing the 2 commands
+
 ### Prompt - powerlevel10k:
 <img width="1366" alt="image" src="https://user-images.githubusercontent.com/85466117/171573163-4d93276f-8431-4cc0-965e-83d1bd25828f.png">
 
