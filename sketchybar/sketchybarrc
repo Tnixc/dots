@@ -1,0 +1,273 @@
+#                          ﱦ 齃     ﮂ  ﵁ 爵        ﭵ     ﱦ  ﰊ 異 ﴱ אַ  'Y⃣'
+
+############## BAR ##############
+sketchybar -m --bar height=50 \
+                    blur_radius=10 \
+                    position=top \
+                    padding_left=8 \
+                    padding_right=10 \
+                    margin=10 \
+                    corner_radius=10 \
+                    color=0xff1e1d2e \
+                    border_width=10 \
+                    border_color=0x002E3440\
+                    shadow=on
+
+############## GLOBAL DEFAULTS ##############
+sketchybar -m --default updates=when_shown \
+                        drawing=on \
+                        cache_scripts=on \
+                        icon.font="FiraCode Nerd Font:Bold:16.0" \
+                        icon.color=0xffECEFF4 \
+                        icon.highlight_color=0xffE48FA8 \
+                        label.font="FiraCode Nerd Font:Bold:16.0" \
+                        label.color=0xffECEFF4
+
+############## SPACE DEFAULTS ##############
+sketchybar -m --default label.padding_left=0 \
+                        label.padding_right=0 \
+                        icon.padding_left=16 \
+                        icon.padding_right=16
+                        background.corner_radius=5 \
+
+sketchybar -m --add item logo left \
+              --set logo icon= \
+                    icon.color=0xff010101     \
+                    background.corner_radius=5 \
+                    background.color=0xffA5E0D5 \
+                    background.height=30 \
+                    background.padding_right=4 \
+                    background.padding_left=4 \
+                    click_script="sketchybar -m --update"
+
+############## PRIMARY DISPLAY SPACES ##############
+sketchybar -m --add space productivity left \
+              --set productivity associated_space=1 \
+                         associated_display=1 \
+                         icon=1 \
+                         click_script="yabai -m space --focus 1" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe productivity mouse.entered mouse.exited \
+                                                                 \
+              --add space browser left \
+              --set browser associated_display=1 \
+                         associated_space=2 \
+                         icon=2 \
+                         click_script="yabai -m space --focus 2" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe browser mouse.entered mouse.exited \
+                                                                 \
+              --add space messaging left \
+              --set messaging associated_display=1 \
+                         associated_space=3 \
+                         icon=3 \
+                         click_script="yabai -m space --focus 3" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe messaging mouse.entered mouse.exited \
+                                                                 \
+              --add space reference left \
+              --set reference associated_display=1 \
+                         associated_space=4 \
+                         icon=4 \
+                         click_script="yabai -m space --focus 4" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe reference mouse.entered mouse.exited \
+                                                                 \
+              --add space code left \
+              --set code associated_display=1 \
+                         associated_space=5 \
+                         icon=5 \
+                         click_script="yabai -m space --focus 5" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe code mouse.entered mouse.exited \
+                                                                 \
+              --add space media left \
+              --set media associated_display=2 \
+                         associated_space=6 \
+                         icon=6 \
+                         click_script="yabai -m space --focus 6" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe media mouse.entered mouse.exited \
+                                                                 \
+              --add space feed left \
+              --set feed associated_display=2 \
+                         associated_space=7 \
+                         icon=7 \
+                         click_script="yabai -m space --focus 7" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe feed mouse.entered mouse.exited \
+                                                                 \
+              --add space system left \
+              --set system associated_display=2 \
+                         associated_space=8 \
+                         icon=8 \
+                         click_script="yabai -m space --focus 8" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe system mouse.entered mouse.exited \
+                                                                 \
+              --add space vm left \
+              --set vm associated_display=2 \
+                         associated_space=9 \
+                         icon=9 \
+                         click_script="yabai -m space --focus 9" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe vm mouse.entered mouse.exited           \
+                                                                  \
+              --add space dam left \
+              --set dam associated_display=2 \
+                         associated_space=10 \
+                         icon=10 \
+                         click_script="yabai -m space --focus 9" \
+                         background.color=0xff3C3E4F \
+                         background.drawing=on \
+                         icon.font="FiraCode Nerd Font:Bold:16.0" \
+              --subscribe dam mouse.entered mouse.exited
+
+sketchybar --add item space_separator left                            \
+           --set space_separator icon=                               \
+                                 background.padding_left=7           \
+                                 background.padding_right=7          \
+                                 label.drawing=off                    \
+                                 icon.color=0xff92B3F5                \
+                                                                      \
+           --add item window_title left                               \
+           --set window_title    script="~/.config/sketchybar/plugins/window_title.sh" \
+                                 icon.drawing=off                     \
+                                 label.color=0xffb7bdf4             \
+           --subscribe window_title front_app_switched
+
+############## ITEM DEFAULTS ###############
+sketchybar -m --default label.padding_left=0 \
+                        icon.padding_right=3 \
+                        icon.padding_left=6 \
+                        label.padding_right=3\
+
+############## RIGHT ITEMS ##############
+sketchybar -m --add item spot_logo center\
+              --set spot_logo icon= \
+                               icon.color=0xff121219\
+                               background.color=0xffEDC4E5 \
+                               background.height=30 \
+                               background.padding_right=5\
+                               background.corner_radius=5 \
+                               background.padding_left=5\
+                               icon.font="FiraCode Nerd Font:Bold:20.0" \
+
+sketchybar -m --add item spot center \
+              --set spot update_freq=1 \
+                          script="~/.config/sketchybar/plugins/spotifyIndicator.sh" \
+                          background.color=0xff3C3E4F \
+                          background.height=25 \
+                          background.corner_radius=5 \
+                          label.padding_right=10 \
+
+sketchybar -m --add item time right \
+              --set time update_freq=1 \
+                          script="~/.config/sketchybar/plugins/time.sh" \
+                          background.color=0xff3C3E4F \
+                          background.height=25 \
+                          background.corner_radius=5 \
+                          label.padding_right=10 \
+
+
+sketchybar -m --add item time_logo right\
+              --set time_logo icon= \
+                               icon.color=0xff121219\
+                               background.color=0xffF5E3B5 \
+                               background.height=30 \
+                               background.padding_right=5\
+                               background.corner_radius=5 \
+                               background.padding_left=5\
+
+sketchybar -m --add item clock right \
+              --set clock update_freq=1000 \
+                          script="~/.config/sketchybar/plugins/clock.sh" \
+                          background.color=0xff3C3E4F \
+                          background.height=25 \
+                          background.corner_radius=5 \
+                            label.padding_right=10 \
+
+sketchybar -m --add item clock_logo right\
+              --set clock_logo icon= \
+                               icon.color=0xff121219\
+                               background.color=0xff92B3F5 \
+                               background.height=30 \
+                               background.padding_right=5\
+                               background.padding_left=5\
+                               background.corner_radius=5 \
+
+sketchybar -m --add item battery right \
+              --set battery update_freq=3 \
+                            script="~/.config/sketchybar/plugins/power.sh" \
+                            icon= \
+                            background.color=0xff3C3E4F \
+                            background.height=25      \
+                            label.padding_right=10 \
+                            background.padding_left=5\
+                            background.corner_radius=5 \
+                            
+
+sketchybar -m --add item power_logo right \
+              --set power_logo icon= \
+                    icon.color=0xff121219\
+                    background.color=0xffB3E1A7 \
+                    background.height=30 \
+                    background.padding_left=5\
+                    background.corner_radius=5 \
+
+sketchybar -m --add item net right \
+              --set net script="~/.config/sketchybar/plugins/net.sh" \
+                                background.color=0xff3C3E4F \
+                                background.height=25\
+                                background.corner_radius=5 \
+                                  label.padding_right=5 \
+
+
+sketchybar -m --add item net_logo right \
+              --set net_logo icon=\
+                        icon.color=0xff121219\
+                        background.color=0xffE0A3AD \
+                        background.height=30 \
+                        background.padding_left=5 \
+                        background.corner_radius=5 \
+
+############## BRACKETS ##############
+ sketchybar -m --add bracket primary_spaces productivity \
+                                            browser \
+                                            messaging \
+                                            reference \
+                                            code \
+                                            media \
+                                            feed \
+                                            system \
+                                            vm \
+                                            dam \
+  \
+               --set primary_spaces background.color=0xff3C3E4F \
+                                    background.corner_radius=5 \
+                                    background.height=25
+
+
+
+############## FINALIZING THE SETUP ##############
+sketchybar -m --update
+
+echo "sketchybar configuration loaded..."
