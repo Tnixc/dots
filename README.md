@@ -36,7 +36,7 @@ I recommend setting up a simple .sh file that you run on every startup containin
 <img width="1366" alt="image" src="https://user-images.githubusercontent.com/85466117/171573163-4d93276f-8431-4cc0-965e-83d1bd25828f.png">
 
 ### Some other apps:
-I also use colorls and `bat` instead of `cat`
+I also use `exa` instead of `ls` and `bat` instead of `cat`
 
 ## Preview
 
