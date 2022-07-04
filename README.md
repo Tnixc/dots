@@ -1,4 +1,4 @@
-# The dots
+# The dots <img align="right" width="45%" src="https://preview.redd.it/zgl85uvamh991.png?width=640&crop=smart&auto=webp&s=be2dab17bab0094b76d8309cef4607a664d6d41f"></img>
 **I use the [catpuccin](https://github.com/catppuccin/catppuccin) color scheme**
 
 **Wallpaper: https://i.imgur.com/TMrM5AN.jpeg**
@@ -19,6 +19,7 @@ These are config files for:
   - I use the [catpuccin VS code](https://github.com/catppuccin/vscode) theme
 - [Alfred](https://www.alfredapp.com/) - Spotlight replacement
   - I use a custom catpuccin based theme 
+
 ## Important
 The font I use is [FiraCode Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) 
 This is needed for most things to work 
