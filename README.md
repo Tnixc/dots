@@ -1,5 +1,8 @@
 # The dots
 **I use the [catpuccin](https://github.com/catppuccin/catppuccin) color scheme**
+
+**Wallpaper: https://i.imgur.com/TMrM5AN.jpeg**
+
 These are config files for:
 - [SketchyBar](https://github.com/FelixKratz/SketchyBar)
 - [bat](https://github.com/sharkdp/bat)
