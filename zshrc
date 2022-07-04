@@ -1,3 +1,12 @@
+#    ________   ____    __  __
+#  /\_____  \ /\  _`\ /\ \/\ \
+#  \/____//'/'\ \,\L\_\ \ \_\ \
+#       //'/'  \/_\__ \\ \  _  \
+#      //'/'___  /\ \L\ \ \ \ \ \
+#     /\_______\\ `\____\ \_\ \_\
+#     \/_______/ \/_____/\/_/\/_/
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -13,10 +22,13 @@ fi
 # fi
 
 
+# now load zsh-syntax-highlighting plugin
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-
+export PF_SEP=""
+export PF_INFO="ascii title os kernel uptime shell palette"
+export EXA_ICON_SPACING=2
+pfetch
 # Path to your oh-my-zsh installation.
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,7 +83,7 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# "mm/dd/yyyy""dd.mm.yyyy""yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
@@ -85,22 +97,31 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-
-
+# now load zsh-syntax-highlighting plugin
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete)
 source /Users/tnixc/.oh-my-zsh/oh-my-zsh.sh
 # User configuration
-alias ls=colorls
-alias la='colorls -a'
-alias lt='colorls --tree -a'
-alias lofi='/Users/tnixc/.rofi-beats/rofi-beats&&/Users/tnixc/.rofi-beats/rofi-beats'
+alias ls='exa --color=always --icons --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --icons --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --icons --group-directories-first'  # long format
+alias lt='exa -aT --color=always --icons --group-directories-first' # tree listing
 alias bs='brew services'
+alias lofi='mpv https://www.youtube.com/watch?v=5qap5aO4i9A --no-video'
 alias cat='bat'
-cdls() { cd "$@" && ls; }
+cdls() { cd "$@" && exa --icons; }
 alias cd='cdls'
 alias jokes='python3 /Users/tnixc/.corny-jokes-master/cornyjokes'
 # export MANPATH="/usr/local/man:$MANPATH"
+alias nvim='lvim'
+alias vim='lvim'
+alias python='python3'
+alias pip='pip3'
+alias a='lvim'
+alias 'rm -rf'=trash
+alias rm=trash
+alias tl=trash-list
 
+alias te='tl&&trash-empty'
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -117,15 +138,17 @@ alias jokes='python3 /Users/tnixc/.corny-jokes-master/cornyjokes'
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
+# For a full list of active aliases, run "alias".
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run "p10k configure" or edit ~/.p10k.zsh.
+source ~/.p10k.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=61'
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 export PATH="/Users/tnixc/ubin:$PATH"
 export PATH=$PATH:/Users/tnixc/.spicetify
 # eval $(starship init zsh)
+
