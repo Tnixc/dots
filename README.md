@@ -1,4 +1,6 @@
-# The dots <img align="right" width="45%" src="https://preview.redd.it/zgl85uvamh991.png?width=640&crop=smart&auto=webp&s=be2dab17bab0094b76d8309cef4607a664d6d41f"></img>
+# The dots
+![a](https://user-images.githubusercontent.com/85466117/191979248-78b3c108-f125-4953-8c75-b735bdd2f962.png)
+
 **I use the [catpuccin](https://github.com/catppuccin/catppuccin) color scheme**
 
 **Wallpaper: https://i.imgur.com/TMrM5AN.jpeg**
@@ -33,15 +35,23 @@ You can get started [here](https://support.mozilla.org/en-US/questions/1251199)
 I also use `exa` instead of `ls` and `bat` instead of `cat`
 
 ## Preview
-### I use sketchybar which is the bar you will see at the top
-### Discord and iTerm2, the colors on the side is SIP(https://sipapp.io/)
-![SCR-20220702-twk](https://user-images.githubusercontent.com/85466117/177003174-296908a5-4f03-4d4d-b0e9-e5e0dc0b743d.png)
+### I use sketchybar which is the bar you will see at the top/bottom
+### Discord. The colors on the side is SIP(https://sipapp.io/)
+
+![SCR-20220923-ur8](https://user-images.githubusercontent.com/85466117/191979756-6cec7921-66da-4db1-8026-86eb46924b34.png)
+
 ### Firefox
-![SCR-20220702-trp](https://user-images.githubusercontent.com/85466117/177003216-16295a2e-90c3-422e-8b32-f9b149423117.png)
+
+![SCR-20220923-utk](https://user-images.githubusercontent.com/85466117/191980237-1112741c-f11f-40c2-bcbd-9d8f0bb547ee.jpeg)
+
 ### VScode
-![SCR-20220702-u13](https://user-images.githubusercontent.com/85466117/177003236-a0992247-f5ea-43b4-93c8-098a6cd46a03.png)
+
+![image](https://user-images.githubusercontent.com/85466117/191980748-377d384d-bb52-4a4e-84d8-598f120c4980.png)
+
 ### Alfred
-![SCR-20220702-tvy](https://user-images.githubusercontent.com/85466117/177003248-1c27e144-1e03-4868-9eb6-ef72a58a914d.jpeg)
+
+![image](https://user-images.githubusercontent.com/85466117/191980831-44b2e1d1-c693-4414-9639-9d595f4ac577.png)
+
 
 ## Thanks
 
