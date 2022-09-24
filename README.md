@@ -56,7 +56,7 @@ I also use `exa` instead of `ls` and `bat` instead of `cat`
 ## Thanks
 
 ❤️ [catpuccin](https://github.com/catppuccin/catppuccin) for the awesome color scheme
-- Startpage wave and Prismatic night for the incredible start page
+- Glide for the incredible start page
 - Zelk discord theme 
 - [@FelixKratz](https://github.com/FelixKratz) for overhauling my sketchybar config
 - [@Kami](https://github.com/VlxtIykg) for helping with this project
