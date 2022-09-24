@@ -15,7 +15,7 @@ These are config files for:
   - [Startpage wave](https://github.com/Tobias-Schoch/startpage-wave)
   - [Prismatic Night](https://github.com/3r3bu5x9/Prismatic-Night)
 - [Discord](https://discord.com/)
-  - I use [Goosemod](https://goosemod.com/) for custom css and some plugins
+  - I use [Replugged](https://replugged.dev/) for custom css and some plugins
   - And the [Zelk](https://github.com/schnensch0/zelk) theme
 - VS code
   - I use the [catpuccin VS code](https://github.com/catppuccin/vscode) theme
