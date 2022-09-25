@@ -18,9 +18,9 @@ These are config files for:
   - I use [Replugged](https://replugged.dev/) for custom css and some plugins
   - And the [Zelk](https://github.com/schnensch0/zelk) theme
 - VS code
-  - I use the [catpuccin VS code](https://github.com/catppuccin/vscode) theme
+  - I use the [catppuccin VS code](https://github.com/catppuccin/vscode) theme
 - [Alfred](https://www.alfredapp.com/) - Spotlight replacement
-  - I use a custom catpuccin based theme 
+  - I use a custom catppuccin based theme 
 
 ## Important
 The font I use is [FiraCode Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) 
@@ -55,7 +55,7 @@ I also use `exa` instead of `ls` and `bat` instead of `cat`
 
 ## Thanks
 
-❤️ [catpuccin](https://github.com/catppuccin/catppuccin) for the awesome color scheme
+❤️ [catppuccin](https://github.com/catppuccin/catppuccin) for the awesome color scheme
 - Glide for the incredible start page
 - Zelk discord theme 
 - [@FelixKratz](https://github.com/FelixKratz) for overhauling my sketchybar config
