@@ -1,0 +1,15 @@
+.statusbar-item {
+  font-family: "Fira code" !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat !important;
+}
+.monaco-icon-label-container {
+  font-family: "Fira code" !important;
+}
+#workbench\.parts\.statusbar {
+  background-color: #1d1d2c !important;
+}
