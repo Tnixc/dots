@@ -15,51 +15,6 @@
 	<title>~</title>
 	<style id="styles"></style>
 	<style id="customfont"></style>
-  <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-			let date = today.getDate();
-			let month = today.getMonth();
-			let year = today.getFullYear();
-			const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-			let dailyday = days[today.getDay()];
-			month = month + 1;
-      m = checkTime(m);
-      s = checkTime(s);
-      if (h > 12) {
-				h -= 12;
-      }
-			h = checkTime(h);
-			document.getElementById('clocker').innerHTML = h + ":" + m + ":" + s;
-			document.getElementById('dater').innerHTML = date + "/" + month + "/" + year;
-			document.getElementById('dayer').innerHTML = dailyday;
-    }
-    setInterval(startTime, 40);
-
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-  </script>
-  <script>
-    const requestUrl =
-      'https://api.unsplash.com/search/photos?query=london&client_id=<YOUR CLIENT ID GOES HERE>';
-    const imageToDisplay = document.querySelector('#main-img');
-    function getNewImage() {
-      let randomNumber = Math.floor(Math.random() * 10);
-      return fetch(requestUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          let allImages = data.results[randomNumber];
-          return allImages.urls.regular;
-        });
-    }
-		let randomImage = getNewImage();
-    imageToDisplay.src = randomImage;
-  </script>
 </head>
 
 <body>
@@ -161,5 +116,43 @@
 		</div>
 	</div>
 </body>
+<script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+			let date = today.getDate();
+			let month = today.getMonth();
+			let year = today.getFullYear();
+			const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+			let dailyday = days[today.getDay()];
+			month = month + 1;
+      m = checkTime(m);
+      s = checkTime(s);
+      if (h > 12) {
+				h -= 12;
+      }
+			h = checkTime(h);
+			document.getElementById('clocker').innerHTML = h + ":" + m + ":" + s;
+			document.getElementById('dater').innerHTML = date + "/" + month + "/" + year;
+			document.getElementById('dayer').innerHTML = dailyday;
+    }
+    setInterval(startTime, 40);
 
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+  <script>
+    const bodyImage = document.querySelector('body');
+	
+	fetch('https://source.unsplash.com/random/1920x1080/?code').then(e => {
+		// set the background image
+		bodyImage.style.backgroundImage = `url(${e.url})`;
+	});
+	
+    
+  </script>
 </html>
