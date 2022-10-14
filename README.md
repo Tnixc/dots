@@ -11,9 +11,9 @@ These are config files for:
 - [btop](https://github.com/aristocratos/btop)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- **My firefox start page, put together from:**
-  - [Startpage wave](https://github.com/Tobias-Schoch/startpage-wave)
-  - [Prismatic Night](https://github.com/3r3bu5x9/Prismatic-Night)
+- My firefox setup
+  - The startup page is included in /Prismatic-Night
+  - The custom CSS can be found over at https://github.com/Tnixc/firefox
 - [Discord](https://discord.com/)
   - I use [Replugged](https://replugged.dev/) for custom css and some plugins
   - And the [Zelk](https://github.com/schnensch0/zelk) theme
