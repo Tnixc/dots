@@ -1,0 +1,162 @@
+// For VScode
+{
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.fontFamily": "Firacode Nerd Font",
+  "editor.tabCompletion": "on",
+  "git.autofetch": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.cursorBlinking": "smooth",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "code-runner.executorMap": {
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "groovy": "groovy",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "javascript": "node",
+    "shellscript": "bash",
+    "vbscript": "cscript //Nologo",
+    "scala": "scala",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "swift": "swift",
+    "clojure": "lein exec",
+    "racket": "racket",
+    "ahk": "autohotkey",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "dart": "dart",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "coffeescript": "coffee",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "perl": "perl",
+    "lisp": "sbcl --script",
+    "csharp": "scriptcs",
+    "ocaml": "ocaml",
+    "fsharp": "fsi",
+    "applescript": "osascript",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "go": "go run",
+    "bat": "cmd /c",
+    "python": "python3 -u",
+    "crystal": "crystal",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "r": "Rscript",
+    "scheme": "csi -script",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "v": "v run",
+    "lua": "lua",
+    "php": "php",
+    "julia": "julia",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "autoit": "autoit3",
+    "kit": "kitc --run",
+    "typescript": "ts-node"
+  },
+  "explorer.confirmDelete": false,
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.font.regular": "Inter",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  "terminal.integrated.cursorStyle": "line",
+  "backgroundCover.opacity": 0.040000000000000001,
+  "vscode_custom_css.imports": ["file:///Users/tnixc/.config/vscodecss/custom.css"],
+  "customizeUI.activityBarHideSettings": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.titleBarStyle": "native",
+  "customizeUI.titleBar": "inline",
+  "files.autoSave": "onFocusChange",
+  "helium-icon-theme.folders.color": "#92b3f5",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground2": "#B3E1A7",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#E48FA8",
+    "editorBracketHighlight.foreground1": "#EFB68E",
+    "editorBracketHighlight.foreground4": "#C5A7F2",
+    "editorBracketHighlight.foreground3": "#F5E3B5"
+  },
+  "workbench.fontAliasing": "auto",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.bracketPairColorization.enabled": true,
+  "window.dialogStyle": "custom",
+  "terminal.external.osxExec": "iTerm2.app",
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "helium-icon-theme.saturation": 1,
+  "workbench.productIconTheme": "material-product-icons",
+  "monkeyPatch.browserModules": [],
+  "editor.smoothScrolling": true,
+  "editor.guides.bracketPairs": true,
+  "explorer.openEditors.sortOrder": "alphabetical",
+  "editor.fontWeight": "normal",
+  "customizeUI.font.monospace": "Firacode Nerd Font",
+  "security.workspace.trust.untrustedFiles": "open",
+  "marquee.configuration.background": "11",
+  "workbench.list.smoothScrolling": true,
+  "editor.inlayHints.fontFamily": "Firacode Nerd Font",
+  "editor.fontLigatures": true,
+  "explorer.openEditors.visible": 40,
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontFamily": "Firacode Nerd Font",
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "marquee.configuration.workspaceLaunch": false,
+  "settingsSync.ignoredSettings": ["terminal.integrated.fontFamily", "customizeUI.font.monospace", "customizeUI.font.regular", "editor.fontFamily", "debug.console.fontFamily"],
+  "editor.cursorSmoothCaretAnimation": true,
+  "indentRainbow.colors": ["#F5E3B511", "#B3E1A711", "#C5A7F211", "#9CDAE911"],
+
+  // The indent color if the number of spaces is not a multiple of "tabSize".
+
+  // The indent color when there is a mix between spaces and tabs.
+  // To be disabled this coloring set this to an empty string.
+  "[css]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "mblode.pretty-formatter"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "customizeUI.statusBarPosition": "top",
+  "workbench.editor.enablePreview": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "editor.minimap.renderCharacters": false,
+       // use Mocha as the base
+  // pink as the accent colour
+  "catppuccin.accentColor": "rosewater",
+  // make Mocha specifically very dark
+  // (this preserves other flavours!)
+
+  // use your accent (pink) on the statusBar as well
+  "catppuccin.customUIColors": {
+      "mocha": {
+          "statusBar.foreground": "accent"
+    }
+},
+"editor.fontSize": 14,
+"terminal.integrated.enableMultiLinePasteWarning": false,
+"git.enableSmartCommit": true,
+"update.mode": "manual",
+"window.zoomLevel": 2
+}
