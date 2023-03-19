@@ -1,7 +1,7 @@
 # The dots
 ![a](https://user-images.githubusercontent.com/85466117/191979248-78b3c108-f125-4953-8c75-b735bdd2f962.png)
 
-**I use the [catpuccin](https://github.com/catppuccin/catppuccin) color scheme**
+**I use the [catppuccin](https://github.com/catppuccin/catppuccin) color scheme**
 
 **Wallpaper: https://i.imgur.com/TMrM5AN.jpeg**
 
