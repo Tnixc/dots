@@ -1,8 +1,8 @@
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-rosewater.theme.css");
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css");
 
 /* @import url("https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css"); */
 :root {
-  --font-primary: Inter;
+  --font-primary: 'Inter';
   --font-headline: 'Inter';
   --font-display: 'Space Grotesk';
   --font-code: 'Space Mono';
@@ -63,6 +63,18 @@
     }
   }
 
+  .sidebar-1tnWFu {
+    position: fixed;
+    top: 0;
+    left: 64px;
+    z-index: 999;
+
+  }
+
+  .theme-dark .container-1NXEtd {
+    background: transparent !important;
+  }
+
   .sidebar-1tnWFu:not(:hover) .pinnedChannelsHeaderContainer-89Gjv4 .headerAmount-_-7GrS {
     margin-left: -15px;
   }
@@ -71,16 +83,7 @@
     margin-left: 10px;
   }
 
-  .sidebar-1tnWFu:not(:hover) .panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW,
-  .gameIconWrapper-zXQ03M {
-    margin-left: 6px;
-    transition: margin-left 0.3s;
-    margin-right: 0;
-  }
 
-  .panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW {
-    width: 100%;
-  }
 
   .sidebar-1tnWFu * {
     transition: all 0.3 ease-in-out;
@@ -351,6 +354,10 @@
     padding-right: 0 !important;
   }
 
+  .chat-2ZfjoI {
+    margin-left: 40px;
+  }
+
   @media (min-width: 700px) {
     .sidebar-1tnWFu {
       width: var(--siderbar-no-hover-width, 60px);
@@ -373,11 +380,6 @@
 
     .sidebar-1tnWFu:not(:hover) .container-6sXIoE.withTimeline-824fT_ .coverWrapper-YAplwJ {
       margin-left: 6px;
-    }
-
-    .sidebar-1tnWFu:hover .panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW,
-    .sidebar-1tnWFu:hover .gameIconWrapper-zXQ03M {
-      margin-left: 0;
     }
 
     .container-1zzFcN .connection-3k9QeF .button-12Fmur,
@@ -414,6 +416,15 @@
       width: 240px;
     }
 
+    #app-mount .sidebar-1tnWFu:hover .container-1Bj0eq {
+      transform: translateX(28px);
+
+    }
+
+    #app-mount .sidebar-1tnWFu:hover .container-1Bj0eq .link-1_kTxV {
+      transform: translateX(-28px);
+    }
+
     .actionButtons-2vEOUh .button-1EGGcP .buttonIcon-2Zsrs2,
     .container-1zzFcN .connection-3k9QeF .button-12Fmur .contents-3ca1mk svg {
       width: 0;
@@ -430,11 +441,7 @@
 
   @media (max-width: 700px) {
 
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:not(:hover) .actions-zk2vB_,
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:not(:hover) .info-88fTUI,
-    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:not(:hover) .flex-2S1XBF,
-    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:not(:hover) .timeline-UWmgAx .barText-lmqc5O> :nth-child(2),
-    .panels-3wFtMD .nameTag-sc-gpq {
+    .panels-3wFtMD {
       display: none;
     }
 
@@ -442,13 +449,6 @@
       font-size: 0;
     }
 
-    .panels-3wFtMD {
-      pointer-events: none;
-    }
-
-    .panels-3wFtMD>* {
-      pointer-events: all;
-    }
 
     #app-mount .panels-3wFtMD .wrapper-3Hk9OB {
       width: var(--guild-bar-width-700, 72px);
@@ -1124,7 +1124,7 @@ html:not(.reduce-motion) section[class|="title"] div[class|="toolbar"] div[class
   transform: scale(0.8);
 }
 
-tml:not(.reduce-motion) [class*="userPopoutOuter-"] [class*="activity-"] {
+html:not(.reduce-motion) [class*="userPopoutOuter-"] [class*="activity-"] {
   --wave-width: 284px;
   padding: 16px;
   margin-top: 25px;
@@ -1135,4 +1135,22 @@ tml:not(.reduce-motion) [class*="userPopoutOuter-"] [class*="activity-"] {
 #app-mount>div.appAsidePanelWrapper-ev4hlp>div.notAppAsidePanel-3yzkgB>div.app-3xd6d0>div>div.layers-OrUESM.layers-1YQhyW>div>div>div>div>div.chat-2ZfjoI>div.content-1jQy2l>div.container-3H3gr7>div.chatContainer-2XIz4Y>main>form>div.channelTextArea-1FufC0.channelTextArea-1VQBuV>div>div>div.buttons-uaqb-5>div:nth-child(3),
 #app-mount>div.appAsidePanelWrapper-ev4hlp>div.notAppAsidePanel-3yzkgB>div.app-3xd6d0>div>div.layers-OrUESM.layers-1YQhyW>div>div>div>div>div.chat-2ZfjoI>div.content-1jQy2l>div.container-3H3gr7>div.chatContainer-2XIz4Y>main>form>div>div>div>div.buttons-uaqb-5>div:nth-child(4) {
   display: none;
+}
+
+.ready-3BZNWT {
+  filter: brightness(0) invert(60%) sepia(43%) saturate(1285%) hue-rotate(200deg) brightness(101%) contrast(99%);
+}
+
+.container-3YcgdM {
+  background: #1e1e2e88;
+  backdrop-filter: blur(10px);
+  transform: translateY(-80%);
+  z-index: 2;
+  overflow: hidden;
+  transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 0 0 12px 12px;
+}
+
+.container-3YcgdM:hover {
+  transform: translateY(0);
 }
