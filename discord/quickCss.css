@@ -4,8 +4,8 @@
 :root {
   --font-primary: 'Inter';
   --font-headline: 'Inter';
-  --font-display: 'Space Grotesk';
-  --font-code: 'Space Mono';
+  --font-display: 'Space Mono';
+  --font-code: 'Jetbrains Mono';
 }
 
 @media only screen and (max-width: 1080px) {
@@ -63,13 +63,7 @@
     }
   }
 
-  .sidebar-1tnWFu {
-    position: fixed;
-    top: 0;
-    left: 64px;
-    z-index: 999;
 
-  }
 
   .theme-dark .container-1NXEtd {
     background: transparent !important;
