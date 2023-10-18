@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#A5ACC7FF",
+        "font" : "SpaceMono Nerd Font Mono",
+        "color" : "#9299B2FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#B9C1DEFF",
+        "font" : "SpaceMono Nerd Font Mono",
+        "color" : "#6C6E85FF"
+      },
+      "backgroundSelected" : "#313244FF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#B3BEFEFF",
+        "font" : "SpaceMono Nerd Font Mono",
+        "color" : "#CCD6F3FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "roundness" : 0,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#B3BEFE36",
+      "paddingHorizontal" : 8,
+      "spacing" : 10,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#CDD6F4FF",
+        "font" : "SpaceMono Nerd Font Mono",
+        "color" : "#CCD6F3FF"
+      },
+      "background" : "#1E1E2DFF",
+      "roundness" : 0,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#16161FFF",
+      "paddingHorizontal" : 0,
+      "width" : 1024,
+      "borderPadding" : 6,
+      "borderColor" : "#16161FFF",
+      "blur" : 15,
+      "roundness" : -24,
+      "paddingVertical" : 4
+    },
+    "credit" : "Catppuccin Org",
+    "separator" : {
+      "color" : "#6C7086FF",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#6C7086FF",
+      "thickness" : 0
+    },
+    "name" : "Catppuccin MacOS - Mocha"
+  }
+}
