@@ -24,6 +24,9 @@ I use the Catppuccin theme, and to get it to work you'll need the [Custom CSS an
 I use [Bartender 5](https://www.macbartender.com/) to change it's color.
 
 ### Nvim and others
-For nvim I use pretty much stock [lunar vim[(https://www.lunarvim.org/), and in the terminal I use the Tokyo Night color scheme. 
+For nvim I use pretty much stock [lunar vim](https://www.lunarvim.org/), and in the terminal I use the Tokyo Night color scheme. 
+
+### Wallpaper 
+Here: https://i.imgur.com/LT9xCFE.jpeg
 
 ![C-rice](https://github.com/Tnixc/dots/assets/85466117/eb440d70-cf16-4ed8-a394-ecd00465e5be)
