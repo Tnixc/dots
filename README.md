@@ -17,7 +17,10 @@ For the firefox config, it can be found at https://github.com/tnixc/firefox-conf
 
 ### VScode
 
-I use the Catppuccin theme, and to get it to work you'll need the [Custom CSS and JS Loader Extension](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css). I use [the catppuccin vscode theme](https://github.com/catppuccin/vscode).
+I use the Catppuccin theme, and to get it to work you'll need the [APC Customizer++ extension](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension). I use [the catppuccin vscode theme](https://github.com/catppuccin/vscode).
+
+<img width="1680" alt="image" src="https://github.com/Tnixc/dots/assets/85466117/e0f5ee0f-6912-4c96-b05e-07b316f1b6aa">
+
 
 ### Menubar
 
