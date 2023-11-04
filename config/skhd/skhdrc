@@ -1,0 +1,50 @@
+cmd - return : open /Applications/iTerm.app;
+cmd + shift - return : open /Applications/Firefox.app
+
+####### Shortcut Hotkeys #############
+
+# restart Yabi, SpaceBar, and SKHD
+alt + shift - r : \
+    killall yabai&&yabai --start-service&&skhd --reload
+
+# Switching windows
+
+cmd - 0x30: yabai -m window --focus next || yabai -m window --focus first
+
+# increase window size
+alt + shift - a : yabai -m window --resize left:-20:0
+alt + shift - s : yabai -m window --resize bottom:0:20
+alt + shift - w : yabai -m window --resize top:0:-20
+alt + shift - d : yabai -m window --resize right:20:0
+
+# decrease window size
+cmd + shift - a : yabai -m window --resize left:20:0
+cmd + shift - s : yabai -m window --resize bottom:0:-20
+cmd + shift - w : yabai -m window --resize top:0:20
+cmd + shift - d : yabai -m window --resize right:-20:0
+
+# change layout of desktop
+alt - e : yabai -m space --layout bsp
+alt - d : yabai -m space --layout stack
+alt - s : yabai -m space --layout float
+
+# float / unfloat window and center on screen
+#alt - t : yabai -m window --toggle float;\
+#          yabai -m window --grid 4:4:1:1:2:2
+# float / unfloat window and leave in its current location
+alt + shift - space : yabai -m window --toggle float
+#alt + ctrl - space : yabai -m window --toggle float
+
+# make floating window fill screen
+alt - c     : yabai -m window --toggle float&&yabai -m window --grid 8:8:1:1:6:6
+
+# make floating window fill left-half of screen
+alt - z  : yabai -m window --grid 1:2:0:0:1:1
+
+# make floating window fill right-half of screen
+alt - x  : yabai -m window --grid 1:2:1:0:1:1
+
+
+# enter fullscreen mode for the focused container
+alt- f : yabai -m window --toggle zoom-fullscreen
+
