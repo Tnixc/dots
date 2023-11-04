@@ -1,0 +1,58 @@
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+ENABLE_CORRECTION="true"
+
+#*Alias
+alias bs='brew services'
+alias cat='bat'
+alias bat='bat'
+cdls() { cd "$@" && exa --icons; }
+alias cd='cdls'
+alias vi='lvim'
+alias vim='lvim'
+alias nvim='lvim'
+alias python='python3'
+alias pip='pip3'
+alias a='lvim'
+alias rm=trash
+alias tl=trash-list
+alias tree='exa --tree --icons'
+alias te='tl&&trash-empty'
+alias q=exit
+alias spt=spotify_player
+#* PATH
+
+export PATH="/Users/tnixc/ubin:$PATH"
+export PATH="/Users/tnixc/.cargo/bin:$PATH"
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+plugins=(git zsh-syntax-highlighting zsh-history-substring-search)
+
+
+source $ZSH/oh-my-zsh.sh
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias ls='exa --color=always --icons --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --icons --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --icons --group-directories-first'  # long format
+alias lt='exa -aT --color=always --icons --group-directories-first' # tree listingexport PATH=$PATH:/Users/tnixc/.spicetify
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/tnixc/.bun/_bun" ] && source "/Users/tnixc/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=/Users/tnixc/.local/bin:$PATH
+export PATH="$BUN_INSTALL/bin:$PATH"

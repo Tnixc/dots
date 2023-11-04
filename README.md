@@ -10,6 +10,10 @@ For fonts I mainly use `FiraCode Nerd Font`, `Inter`, and `Space Mono`
 
 The prompt is [powerlevel10k](https://github.com/romkatv/powerlevel10k), and I recommend using [eza](https://github.com/eza-community/eza) for the `ls` replacement.
 
+### ZSH
+
+I am using oh-my-zsh and the theme is powerlevel10k. The plugins I have are `zsh-autosuggestions`,`zsh-history-substring-search`,`zsh-syntax-highlighting`
+
 ### Firefox
 
 For the firefox config, it can be found at https://github.com/tnixc/firefox-config.
