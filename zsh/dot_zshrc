@@ -8,7 +8,7 @@ ENABLE_CORRECTION="true"
 alias bs='brew services'
 alias cat='bat'
 alias bat='bat'
-cdls() { cd "$@" && exa --icons; }
+cdls() { cd "$@" && eza --icons; }
 alias cd='cdls'
 alias vi='lvim'
 alias vim='lvim'
@@ -18,12 +18,12 @@ alias pip='pip3'
 alias a='lvim'
 alias rm=trash
 alias tl=trash-list
-alias tree='exa --tree --icons'
+alias tree='eza --tree --icons'
 alias te='tl&&trash-empty'
 alias q=exit
 alias spt=spotify_player
 #* PATH
-
+export EDITOR='lvim'
 export PATH="/Users/tnixc/ubin:$PATH"
 export PATH="/Users/tnixc/.cargo/bin:$PATH"
 
@@ -40,10 +40,9 @@ source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias ls='exa --color=always --icons --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --icons --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --icons --group-directories-first'  # long format
-alias lt='exa -aT --color=always --icons --group-directories-first' # tree listingexport PATH=$PATH:/Users/tnixc/.spicetify
+alias ls='eza --color=always --icons --group-directories-first' # my preferred listing
+alias la='eza -a --color=always --icons --group-directories-first'  # all files and dirs
+alias ll='eza -l --color=always --icons --group-directories-first'  # long format
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
