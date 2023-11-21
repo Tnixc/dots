@@ -20,6 +20,10 @@ For the firefox config, it can be found at https://github.com/tnixc/firefox-conf
 
 However, I mostly use Arc now.
 
+### Sketchybar
+
+I use Sketchybar, make sure to run `chmod +x *` in the plugins directory to make the plugins work.
+
 ### VScode
 
 I use the Catppuccin theme, and to get it to work you'll need the [APC Customizer++ extension](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension). I use [the catppuccin vscode theme](https://github.com/catppuccin/vscode).
