@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
 # the scripting-addition must be loaded manually if
 # you are running yabai on macOS Big Sur. Uncomment
 # the following line to have the injection performed
@@ -17,14 +18,6 @@ yabai -m config window_origin_display       default
 yabai -m config window_placement            second_child
 yabai -m config window_topmost              off
 yabai -m config window_shadow               off
-yabai -m config insert_feedback_color       0xaaa6e3a1
-yabai -m config active_window_border_color  0xFF7AA2F7
-yabai -m config normal_window_border_color  0x0024283B
-yabai -m config window_border_width         4         
-yabai -m config window_border_radius        12        
-yabai -m config window_border_blur          off        
-yabai -m config window_border_hidpi         off       
-yabai -m config window_border               off      
 yabai -m config split_ratio                 0.50
 yabai -m config auto_balance                off
 yabai -m config mouse_modifier              ctrl
@@ -37,11 +30,11 @@ yabai -m config active_window_opacity       1.0
 yabai -m config normal_window_opacity       0.9
 # general space settings
 yabai -m config layout                      bsp
-yabai -m config top_padding                 12
-yabai -m config bottom_padding              12
-yabai -m config left_padding                12
-yabai -m config right_padding               12
-yabai -m config window_gap                  12
+yabai -m config top_padding                 11
+yabai -m config bottom_padding              11
+yabai -m config left_padding                63
+yabai -m config right_padding               11
+yabai -m config window_gap                  11
 
 
 yabai -m rule --add label="iTerm2" app="^iTerm2$" title="Visor" manage=off
@@ -58,7 +51,7 @@ yabai -m rule --add label="mpv" app="^mpv$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add label="System Information" app="System Information" title="System Information" manage=off
-yabai -m rule --add title="\bLittle Arc\b" manage=off sticky=true
+yabai -m rule --add title="\bLittle Arc\b" manage=off sticky=on
 
 borders active_color=0xff8AADF4 inactive_color=0xff1A1B26 width=6.0 2>/dev/null 1>&2 &
 echo "yabai configuration loaded.."
