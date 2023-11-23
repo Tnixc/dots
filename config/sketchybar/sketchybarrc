@@ -6,9 +6,11 @@ sketchybar --bar height=46 \
       padding_left=4 \
       padding_right=4 \
       margin=7 \
-      corner_radius=8 \
+      corner_radius=12 \
       color=0xff1e1d2e \
-      shadow=on
+      shadow=on \
+      border_width=3 \
+      border_color=0xff313A4F
 
 ############## GLOBAL DEFAULTS ##############
 sketchybar --default updates=when_shown \
@@ -54,7 +56,7 @@ sketchybar --default label.padding_left=6 \
       background.height=30 \
       background.padding_right=4 \
       background.padding_left=4 \
-      background.corner_radius=5
+      background.corner_radius=6
 
 sketchybar --add item clock_icon left \
       --set clock_icon icon= \
