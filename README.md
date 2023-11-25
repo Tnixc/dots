@@ -1,5 +1,4 @@
 # Dotfiles
-<img align="right" width="59" alt="image" src="https://github.com/Tnixc/dots/assets/85466117/2ef92a61-c9c2-4888-8638-31867402977d">
 
 There's nothing much in .config because you can find all of the ports elsewhere, mainly on catppuccin's github. 
 
@@ -23,14 +22,13 @@ However, I mostly use Arc now.
 
 ### Sketchybar
 
-I use Sketchybar, make sure to run `chmod +x *` in the plugins directory to make the plugins work. You can see it on the right. I typically have it on the left side of my screen.
+I use Sketchybar, make sure to run `chmod +x *` in the plugins directory to make the plugins work. You can see it in the vscode screenshot.
 
 ### VScode
 
 I use the Catppuccin theme, and to get it to work you'll need the [APC Customizer++ extension](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension). I use [the catppuccin vscode theme](https://github.com/catppuccin/vscode).
 
-<img width="1680" alt="image" src="https://github.com/Tnixc/dots/assets/85466117/e0f5ee0f-6912-4c96-b05e-07b316f1b6aa">
-
+<img width="1680" alt="image of vscode" src="https://github.com/Tnixc/dots/assets/85466117/d22f6726-7d8a-4d90-a96a-08638fe1e9ea">
 
 ### Menubar
 
