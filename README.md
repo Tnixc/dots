@@ -1,4 +1,5 @@
 # Dotfiles
+<img align="right" width="59" alt="image" src="https://github.com/Tnixc/dots/assets/85466117/2ef92a61-c9c2-4888-8638-31867402977d">
 
 There's nothing much in .config because you can find all of the ports elsewhere, mainly on catppuccin's github. 
 
@@ -22,7 +23,7 @@ However, I mostly use Arc now.
 
 ### Sketchybar
 
-I use Sketchybar, make sure to run `chmod +x *` in the plugins directory to make the plugins work.
+I use Sketchybar, make sure to run `chmod +x *` in the plugins directory to make the plugins work. You can see it on the right. I typically have it on the left side of my screen.
 
 ### VScode
 
