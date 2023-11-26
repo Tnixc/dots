@@ -2,7 +2,7 @@
 
 There's nothing much in .config because you can find all of the ports elsewhere, mainly on catppuccin's github. 
 
-For the color schemes, I mainly use Catppuccin and Tokyo Night. 
+For the color schemes, I mainly use [Catppuccin](https://github.com/catppuccin) and Tokyo Night. 
 
 My window manager is [yabai](https://github.com/koekeishiya/yabai), and for the borders I use [Jankyborders](https://github.com/FelixKratz/JankyBorders)
 
@@ -32,7 +32,7 @@ I use the Catppuccin theme, and to get it to work you'll need the [APC Customize
 
 ### Menubar
 
-I use [Bartender 5](https://www.macbartender.com/) to change it's color.
+I use [Bartender 5](https://www.macbartender.com/) to change it's color. But I usually use [Menuwhere](https://manytricks.com/menuwhere/).
 
 ### Nvim and terminal
 For nvim I use pretty stock [lunar vim](https://www.lunarvim.org/), and in iTerm2 I use the Tokyo Night color scheme. 
