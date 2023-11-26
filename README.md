@@ -6,7 +6,7 @@ For the color schemes, I mainly use Catppuccin and Tokyo Night.
 
 My window manager is [yabai](https://github.com/koekeishiya/yabai), and for the borders I use [Jankyborders](https://github.com/FelixKratz/JankyBorders)
 
-For fonts I mainly use `FiraCode Nerd Font`, `Inter`, and `Space Mono`
+For fonts I mainly use `FiraCode Nerd Font`, `Inter`, `Geist`, `Geist Mono`, `Space Mono`
 
 The prompt is [powerlevel10k](https://github.com/romkatv/powerlevel10k), and I recommend using [eza](https://github.com/eza-community/eza) for the `ls` replacement.
 
