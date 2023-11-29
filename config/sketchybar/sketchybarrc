@@ -21,9 +21,6 @@ sketchybar --default updates=when_shown \
       background.corner_radius=5\
       background.height=40
 
-
-# 
-
 SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
 SPACES=()
 
@@ -53,7 +50,7 @@ sketchybar --default label.padding_left=6 \
       icon.padding_right=6 \
       icon.font="FiraCode Nerd Font Mono:Bold:28.0" \
       label.font="Geist Mono:Bold:14.0" \
-      background.height=30 \
+      background.height=30 
       background.padding_right=4 \
       background.padding_left=4 \
       background.corner_radius=6
@@ -62,6 +59,7 @@ sketchybar --add item clock_icon left \
       --set clock_icon icon= \
       icon.color=0xff121219 \
       label.drawing=off \
+      padding_left=4 \
       background.color=0xff92B3F5 \
 
 sketchybar --add item hour left \
@@ -81,16 +79,15 @@ sketchybar --add item min left \
 sketchybar --add item date_icon left \
       --set date_icon icon=󰃭 \
       icon.color=0xff121219 \
+      padding_right=8 \
+      padding_left=8 \
       label.drawing=off \
       background.color=0xffF5A97E \
 
 sketchybar \
-      --add item date left --set date update_freq=1220 icon.drawing=off padding_right=8 label="$(date '+%d' | sed s/^0//)" \
-      --add item month left --set month update_freq=1220 icon.drawing=off padding_right=8 label="$(date '+%b')"\
-      --add item day left --set day update_freq=1220 icon.drawing=off padding_right=8 label="$(date '+%a')" \
-
-
-
+      --add item date left --set date update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%d' | sed s/^0//)" \
+      --add item month left --set month update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%b')"\
+      --add item day left --set day update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%a')" 
 
 ############## RIGHT ITEMS ##############
 
@@ -120,7 +117,6 @@ sketchybar --add item volume_icon right \
       label.drawing=off \
       background.color=0xffC6A0F6\
 
-############## FINALIZING THE SETUP ##############
-sketchybar --update
 
+sketchybar --update
 echo "sketchybar configuration loaded..."
