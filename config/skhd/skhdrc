@@ -1,5 +1,4 @@
-cmd - return : open /Applications/iTerm.app;
-cmd + shift - return : open /Applications/Firefox.app
+alt - return : open /Applications/iTerm.app;
 
 ####### Shortcut Hotkeys #############
 
@@ -7,9 +6,7 @@ cmd + shift - return : open /Applications/Firefox.app
 alt + shift - r : \
     killall yabai&&yabai --start-service&&skhd --reload
 
-# Switching windows
-
-cmd - 0x30: yabai -m window --focus next || yabai -m window --focus first
+# Switching windows 
 
 # increase window size
 alt + shift - a : yabai -m window --resize left:-20:0
@@ -25,7 +22,6 @@ cmd + shift - d : yabai -m window --resize right:-20:0
 
 # change layout of desktop
 alt - e : yabai -m space --layout bsp
-alt - d : yabai -m space --layout stack
 alt - s : yabai -m space --layout float
 
 # float / unfloat window and center on screen
@@ -36,15 +32,34 @@ alt + shift - space : yabai -m window --toggle float
 #alt + ctrl - space : yabai -m window --toggle float
 
 # make floating window fill screen
-alt - c     : yabai -m window --toggle float&&yabai -m window --grid 8:8:1:1:6:6
+alt - c  : yabai -m window --toggle float&&yabai -m window --grid 8:8:1:1:6:6
 
 # make floating window fill left-half of screen
-alt - z  : yabai -m window --grid 1:2:0:0:1:1
+alt - z  :  yabai -m window --toggle float&&yabai -m window --grid 1:2:0:0:1:1
 
 # make floating window fill right-half of screen
-alt - x  : yabai -m window --grid 1:2:1:0:1:1
-
+alt - x  :  yabai -m window --toggle float&&yabai -m window --grid 1:2:1:0:1:1
 
 # enter fullscreen mode for the focused container
+
 alt- f : yabai -m window --toggle zoom-fullscreen
 
+ctrl - 1: yabai -m space --focus 1
+ctrl - 2: yabai -m space --focus 2
+ctrl - 3: yabai -m space --focus 3
+ctrl - 4: yabai -m space --focus 4
+ctrl - 5: yabai -m space --focus 5
+ctrl - 6: yabai -m space --focus 6
+ctrl - 7: yabai -m space --focus 7
+ctrl - 8: yabai -m space --focus 8
+ctrl - 9: yabai -m space --focus 9
+
+ctrl + shift - 1: yabai -m window --space 1 && yabai -m space --focus 1
+ctrl + shift - 2: yabai -m window --space 2 && yabai -m space --focus 2
+ctrl + shift - 3: yabai -m window --space 3 && yabai -m space --focus 3
+ctrl + shift - 4: yabai -m window --space 4 && yabai -m space --focus 4
+ctrl + shift - 5: yabai -m window --space 5 && yabai -m space --focus 5
+ctrl + shift - 6: yabai -m window --space 6 && yabai -m space --focus 6
+ctrl + shift - 7: yabai -m window --space 7 && yabai -m space --focus 7
+ctrl + shift - 8: yabai -m window --space 8 && yabai -m space --focus 8
+ctrl + shift - 9: yabai -m window --space 9 && yabai -m space --focus 9

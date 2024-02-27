@@ -1,0 +1,59 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[  ](white)\
+$shell\
+$directory\
+$git_branch\
+$git_status\
+[|-](cyan)\
+$character
+
+"""
+[directory]
+style = "blue"
+format = "[$path ]($style)"
+truncation_length = 99
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = ""
+format = '[[$symbol $branch ](green)]($style)'
+
+[git_status]
+style = ""
+ahead = '[${count}](blue)'
+behind = '[${count}](yellow)'
+untracked = '[?${count}](purple)'
+modified = '[~${count}](yellow)'
+staged = '[+${count}](yellow)'
+renamed = '[\\${count}](purple)'
+deleted = '[-${count}](red)'
+conflicted = '[ ${count}](red)'
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[time]
+disabled = false
+time_format = "%R:%S"
+format = '[ 󱑒 $time ](purple)'
+
+[character]
+disabled = false
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+
+[cmd_duration]
+min_time = 500
+format = '[took](yellow) [$duration](bold yellow)'
+
+[shell]
+zsh_indicator = 'zsh'
+nu_indicator = 'nu'
+unknown_indicator = 'mystery shell'
+style = 'yellow'
+disabled = false
+
+[line_break]
+disabled = false
