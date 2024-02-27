@@ -8,11 +8,13 @@ My window manager is [yabai](https://github.com/koekeishiya/yabai), and for the 
 
 For fonts I mainly use `FiraCode Nerd Font`, `Inter`, `Geist`, `Geist Mono`, `Space Mono`
 
-The prompt is [powerlevel10k](https://github.com/romkatv/powerlevel10k), and I recommend using [eza](https://github.com/eza-community/eza) for the `ls` replacement.
+The prompt is [starship](https://starship.rs), and I recommend using [eza](https://github.com/eza-community/eza) for the `ls` replacement.
 
 ### ZSH
 
 I am using oh-my-zsh and the theme is powerlevel10k. The plugins I have are `zsh-autosuggestions`,`zsh-history-substring-search`,`zsh-syntax-highlighting`
+
+For nu I'm using it stock.
 
 ### Firefox
 
