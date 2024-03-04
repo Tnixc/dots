@@ -31,11 +31,11 @@ yabai -m config window_animation_duration   0.1
 
 # general space settings
 yabai -m config layout                      bsp
-yabai -m config top_padding                 6
-yabai -m config bottom_padding              6
-yabai -m config left_padding                58 # 6 + 46 + 6
-yabai -m config right_padding               6
-yabai -m config window_gap                  6
+yabai -m config top_padding                 8
+yabai -m config bottom_padding              8
+yabai -m config left_padding                60 # 6 + 46 + 6
+yabai -m config right_padding               8
+yabai -m config window_gap                  8
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
@@ -52,6 +52,6 @@ yabai -m rule --add label="Raycast" app="Raycast" manage=off
 yabai -m rule --add label="Kap" app="^Kap$" manage=off
 yabai -m rule --add label="Kitty" app="^kitty$" title="quake" manage=off
 
-# borders active_color=0xff464B58 inactive_color=0x11464B58 hidpi=on width=5.0 2>/dev/null 1>&2 &
+borders active_color=0xffB3E1A7 inactive_color=0xff282E44 hidpi=on width=5.0 2>/dev/null 1>&2 &
 
 echo "yabai configuration loaded.."
