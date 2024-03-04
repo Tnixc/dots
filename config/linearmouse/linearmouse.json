@@ -1,0 +1,115 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.126,
+        "disableAcceleration" : false
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1.99
+        },
+        "speed" : {
+          "vertical" : 23.76
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x2022",
+          "vendorID" : "0x258a",
+          "serialNumber" : "000000000000",
+          "category" : "mouse",
+          "productName" : "Model O Wireless"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 0.3508,
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x1532",
+          "productID" : "0x8a",
+          "productName" : "Razer Viper Mini",
+          "category" : "mouse"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.0742
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Keychron Link ",
+          "category" : "mouse",
+          "productID" : "0xd031",
+          "vendorID" : "0x3434"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x258a",
+          "category" : "mouse",
+          "productName" : "Wired Gaming Mouse",
+          "productID" : "0x36"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.2195,
+        "acceleration" : 0
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0xd036",
+          "productName" : "keychron M3 mini",
+          "serialNumber" : "SN1234567890",
+          "category" : "mouse",
+          "vendorID" : "0x3434"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 2.04
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "pointer" : {
+        "speed" : 0.5156,
+        "disableAcceleration" : true,
+        "acceleration" : 1.2385
+      }
+    }
+  ]
+}

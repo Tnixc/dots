@@ -1,0 +1,12 @@
+I1111 21:48:31.108649   61681 ssh_proxy.go:51] "logged in" username="Tnxic"
+I1111 21:48:31.110164   61681 ssh_proxy.go:75] "client started" ipcName="csb-cli-production" status="Not Connected"
+I1111 21:48:31.110303   61681 ssh_proxy.go:116] "received message" type=-1 data="" status="Connecting"
+I1111 21:48:31.110317   61681 ssh_proxy.go:75] "client started" ipcName="csb-cli-production" status="Connecting"
+E1111 21:48:32.111481   61681 ssh_proxy.go:84] "client.Read" err="timed out trying to connect"
+I1111 21:48:32.116996   61681 ssh_proxy.go:103] "ssh proxy server started" pid=61683
+I1111 21:48:33.121797   61681 ssh_proxy.go:75] "client started" ipcName="csb-cli-production" status="Not Connected"
+I1111 21:48:33.123818   61681 ssh_proxy.go:116] "received message" type=-1 data="" status="Connecting"
+I1111 21:48:33.123857   61681 ssh_proxy.go:75] "client started" ipcName="csb-cli-production" status="Connecting"
+I1111 21:48:33.130161   61681 ssh_proxy.go:116] "received message" type=-1 data="" status="Connected"
+I1111 21:48:33.130192   61681 ssh_proxy.go:75] "client started" ipcName="csb-cli-production" status="Connected"
+I1111 21:48:33.130462   61681 ssh_proxy.go:118] "received message" type=1 data="54413"

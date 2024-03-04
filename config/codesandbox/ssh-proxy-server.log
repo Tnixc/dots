@@ -1,0 +1,20 @@
+I1111 21:48:32.302936   61683 ssh_proxy_server.go:53] "logged in" username="Tnxic"
+I1111 21:48:32.303336   61683 ssh_proxy_server.go:65] "server started" ipcName="csb-cli-production" status="Listening"
+I1111 21:48:33.130209   61683 ssh_proxy_server.go:73] "received message" type=-1 data="" status="Connected"
+I1111 21:48:33.130252   61683 ssh_proxy_server.go:75] "received message" type=1 data="6jlwmr"
+I1111 21:48:33.130395   61683 proxyng.go:129] "proxy started" port=54413
+I1111 21:48:33.130400   61683 ssh_proxy_server.go:133] "proxy started" vmId="6jlwmr" port=54413
+I1111 21:48:33.130515   61683 ssh_proxy_server.go:73] "received message" type=-1 data="" status="Disconnected"
+I1111 21:48:37.358080   61683 api.go:140] "starting VM" id="6jlwmr"
+I1111 21:48:37.791940   61683 proxyng.go:225] "proxying" proxy="ssh" count=1 src="127.0.0.1" dst="209.145.50.45:13467"
+I1111 21:49:37.798359   61683 proxyng.go:278] "after ReadFrom" n=8664 dir="remote -> local" err="readfrom tcp 127.0.0.1:54413->127.0.0.1:54439: read tcp 192.168.2.109:54442->209.145.50.45:13467: i/o timeout"
+I1111 21:49:37.798629   61683 proxyng.go:296] "timeout" n=8664 dir="remote -> local"
+I1111 21:50:37.799838   61683 proxyng.go:278] "after ReadFrom" n=64 dir="remote -> local" err="readfrom tcp 127.0.0.1:54413->127.0.0.1:54439: read tcp 192.168.2.109:54442->209.145.50.45:13467: i/o timeout"
+I1111 21:50:37.799923   61683 proxyng.go:296] "timeout" n=64 dir="remote -> local"
+I1111 21:51:37.799263   61683 proxyng.go:278] "after ReadFrom" n=64 dir="remote -> local" err="readfrom tcp 127.0.0.1:54413->127.0.0.1:54439: read tcp 192.168.2.109:54442->209.145.50.45:13467: i/o timeout"
+I1111 21:51:37.799327   61683 proxyng.go:296] "timeout" n=64 dir="remote -> local"
+I1111 21:51:45.199124   61683 proxyng.go:278] "after ReadFrom" n=8901 dir="local -> remote" err=null
+I1111 21:51:45.199147   61683 proxyng.go:287] "EOF / closed" n=8901 dir="local -> remote"
+I1111 21:51:45.199662   61683 proxyng.go:278] "after ReadFrom" n=144 dir="remote -> local" err="readfrom tcp 127.0.0.1:54413->127.0.0.1:54439: read tcp 192.168.2.109:54442->209.145.50.45:13467: use of closed network connection"
+I1111 21:51:45.199671   61683 proxyng.go:200] "proxying done" proxy="ssh" count=0 src="127.0.0.1" dst="209.145.50.45:13467"
+I1111 21:51:45.199715   61683 proxyng.go:306] "read" n=144 dir="remote -> local"

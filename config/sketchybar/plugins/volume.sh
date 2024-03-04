@@ -9,7 +9,7 @@ case $volume in
   ;;
   [3-5][0-9]) ICON="󰕾"
   ;;
-  [1-2][0-9]) ICON=""
+  [1-2][0-9]) ICON="󱄠"
   ;;
   *) ICON="󰝟"
 esac

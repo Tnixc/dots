@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=utf-8">
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+<META name="robots" content="nofollow">
+<LINK rel="stylesheet" type="text/css" href="/style/fresh.css" />
+<link rel="stylesheet" type="text/css" href="/fresh/standard.css" />
+<TITLE>btop-1.2.13.tar.gz: .../tokyo-night.theme | Fossies</TITLE>
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript" src="/scripts/highlight_styles.js"></script>
+</HEAD>
+<BODY>
+<script type="text/javascript" src="/scripts/wz_tooltip.js"></script>
+<script type="text/javascript" src="/scripts/tip_balloon.js"></script>
+<H2><IMG SRC="/warix/forest1.gif" WIDTH="45" HEIGHT="29" ALT=""> "<A HREF="/">Fossies</A>" - the Fresh Open Source Software Archive <IMG SRC="/warix/forest2.gif" WIDTH="48" HEIGHT="30" ALT=""></H2>
+<H3>Member "btop-1.2.13/themes/tokyo-night.theme" (6 Nov 2022, 1763 Bytes) of package <A HREF="/" TITLE="Fossies homepage">/</A><A HREF="/linux/" TITLE="Listing of all main folders within the Fossies basic folder /linux/">linux</A>/<A HREF="/linux/misc/" TITLE="Listing of all packages within the Fossies folder /linux/misc/">misc</A>/<A HREF="/linux/misc/btop-1.2.13.tar.gz/" TITLE="Contents listing, member browsing, download with different compression formats, Doxygen generated source code documentation &amp; more ...">btop-1.2.13.tar.gz</A>:</H3>
+<HR>
+<DIV class="fresh_info">
+As a special service "Fossies" has tried to format the requested text file into HTML format (style: <A HREF="/select_hl_style_text" style="text-decoration:underline;" onmouseover="Tip(hl_styles_text, ABOVE, false, OFFSETX, 0, OFFSETY, 5, BALLOON, true, FOLLOWMOUSE, false, WIDTH, 730, DELAY, 0, FADEIN, 0, FADEOUT, 1000, DURATION, 20000, STICKY, 1, CLICKCLOSE, true)" onmouseout="UnTip()" TITLE="About highlight style types">standard</A>) with prefixed line numbers.
+Alternatively you can here <A HREF="/linux/misc/btop-1.2.13.tar.gz/btop-1.2.13/themes/tokyo-night.theme?m=t">view</A> or <A HREF="/linux/misc/btop-1.2.13.tar.gz/btop-1.2.13/themes/tokyo-night.theme?m=b" onmouseover="Tip(hl_dl_tip, ABOVE, false, OFFSETX, 0, OFFSETY, -5, BALLOON, true, FOLLOWMOUSE, false, WIDTH, 400, DELAY, 0, FADEIN, 0, FADEOUT, 300, DURATION, 10000, STICKY, 1, CLICKCLOSE, true)" onmouseout="UnTip()" TITLE="By the way: A member file download can also be achieved by clicking within a package contents listing on the according byte size field">download</A> the uninterpreted source code file.
+
+</DIV>
+<HR>
+<pre class="hl"><span class="hl lin" id="l_1">    1 </span># Theme: tokyo-night
+<span class="hl lin" id="l_2">    2 </span># By: Pascal Jaeger
+<span class="hl lin" id="l_3">    3 </span>
+<span class="hl lin" id="l_4">    4 </span># Main bg
+<span class="hl lin" id="l_5">    5 </span>theme[main_bg]=&quot;#1a1b26&quot;
+<span class="hl lin" id="l_6">    6 </span>
+<span class="hl lin" id="l_7">    7 </span># Main text color
+<span class="hl lin" id="l_8">    8 </span>theme[main_fg]=&quot;#cfc9c2&quot;
+<span class="hl lin" id="l_9">    9 </span>
+<span class="hl lin" id="l_10">   10 </span># Title color for boxes
+<span class="hl lin" id="l_11">   11 </span>theme[title]=&quot;#cfc9c2&quot;
+<span class="hl lin" id="l_12">   12 </span>
+<span class="hl lin" id="l_13">   13 </span># Higlight color for keyboard shortcuts
+<span class="hl lin" id="l_14">   14 </span>theme[hi_fg]=&quot;#7dcfff&quot;
+<span class="hl lin" id="l_15">   15 </span>
+<span class="hl lin" id="l_16">   16 </span># Background color of selected item in processes box
+<span class="hl lin" id="l_17">   17 </span>theme[selected_bg]=&quot;#414868&quot;
+<span class="hl lin" id="l_18">   18 </span>
+<span class="hl lin" id="l_19">   19 </span># Foreground color of selected item in processes box
+<span class="hl lin" id="l_20">   20 </span>theme[selected_fg]=&quot;#cfc9c2&quot;
+<span class="hl lin" id="l_21">   21 </span>
+<span class="hl lin" id="l_22">   22 </span># Color of inactive/disabled text
+<span class="hl lin" id="l_23">   23 </span>theme[inactive_fg]=&quot;#565f89&quot;
+<span class="hl lin" id="l_24">   24 </span>
+<span class="hl lin" id="l_25">   25 </span># Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+<span class="hl lin" id="l_26">   26 </span>theme[proc_misc]=&quot;#7dcfff&quot;
+<span class="hl lin" id="l_27">   27 </span>
+<span class="hl lin" id="l_28">   28 </span># Cpu box outline color
+<span class="hl lin" id="l_29">   29 </span>theme[cpu_box]=&quot;#565f89&quot;
+<span class="hl lin" id="l_30">   30 </span>
+<span class="hl lin" id="l_31">   31 </span># Memory/disks box outline color
+<span class="hl lin" id="l_32">   32 </span>theme[mem_box]=&quot;#565f89&quot;
+<span class="hl lin" id="l_33">   33 </span>
+<span class="hl lin" id="l_34">   34 </span># Net up/down box outline color
+<span class="hl lin" id="l_35">   35 </span>theme[net_box]=&quot;#565f89&quot;
+<span class="hl lin" id="l_36">   36 </span>
+<span class="hl lin" id="l_37">   37 </span># Processes box outline color
+<span class="hl lin" id="l_38">   38 </span>theme[proc_box]=&quot;#565f89&quot;
+<span class="hl lin" id="l_39">   39 </span>
+<span class="hl lin" id="l_40">   40 </span># Box divider line and small boxes line color
+<span class="hl lin" id="l_41">   41 </span>theme[div_line]=&quot;#565f89&quot;
+<span class="hl lin" id="l_42">   42 </span>
+<span class="hl lin" id="l_43">   43 </span># Temperature graph colors
+<span class="hl lin" id="l_44">   44 </span>theme[temp_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_45">   45 </span>theme[temp_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_46">   46 </span>theme[temp_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_47">   47 </span>
+<span class="hl lin" id="l_48">   48 </span># CPU graph colors
+<span class="hl lin" id="l_49">   49 </span>theme[cpu_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_50">   50 </span>theme[cpu_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_51">   51 </span>theme[cpu_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_52">   52 </span>
+<span class="hl lin" id="l_53">   53 </span># Mem/Disk free meter
+<span class="hl lin" id="l_54">   54 </span>theme[free_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_55">   55 </span>theme[free_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_56">   56 </span>theme[free_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_57">   57 </span>
+<span class="hl lin" id="l_58">   58 </span># Mem/Disk cached meter
+<span class="hl lin" id="l_59">   59 </span>theme[cached_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_60">   60 </span>theme[cached_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_61">   61 </span>theme[cached_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_62">   62 </span>
+<span class="hl lin" id="l_63">   63 </span># Mem/Disk available meter
+<span class="hl lin" id="l_64">   64 </span>theme[available_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_65">   65 </span>theme[available_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_66">   66 </span>theme[available_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_67">   67 </span>
+<span class="hl lin" id="l_68">   68 </span># Mem/Disk used meter
+<span class="hl lin" id="l_69">   69 </span>theme[used_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_70">   70 </span>theme[used_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_71">   71 </span>theme[used_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_72">   72 </span>
+<span class="hl lin" id="l_73">   73 </span># Download graph colors
+<span class="hl lin" id="l_74">   74 </span>theme[download_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_75">   75 </span>theme[download_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_76">   76 </span>theme[download_end]=&quot;#f7768e&quot;
+<span class="hl lin" id="l_77">   77 </span>
+<span class="hl lin" id="l_78">   78 </span># Upload graph colors
+<span class="hl lin" id="l_79">   79 </span>theme[upload_start]=&quot;#9ece6a&quot;
+<span class="hl lin" id="l_80">   80 </span>theme[upload_mid]=&quot;#e0af68&quot;
+<span class="hl lin" id="l_81">   81 </span>theme[upload_end]=&quot;#f7768e&quot;
+</pre></BODY></HTML><!--HTML generated by highlight, http://www.andre-simon.de/-->

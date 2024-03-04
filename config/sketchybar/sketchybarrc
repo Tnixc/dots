@@ -1,25 +1,24 @@
 ############## BAR ##############
 sketchybar --bar height=46 \
-      y_offset=8 \
-      blur_radius=0 \
+      y_offset=6 \
+      blur_radius=10 \
       position=left \
       padding_left=4 \
       padding_right=4 \
-      margin=7 \
+      margin=6 \
       corner_radius=12 \
-      color=0xff1e1d2e \
-      shadow=on \
-      border_width=3 \
-      border_color=0xff313A4F
+      color=0xDD1F2431 \
+      shadow=off \
+      border_width=1 \
+      border_color=0x881A1B26
 
 ############## GLOBAL DEFAULTS ##############
 sketchybar --default updates=when_shown \
-      icon.font="FiraCode Nerd Font Mono:Bold:16.0" \
+      icon.font="GeistMono Nerd Font Mono:Bold:16.0" \
       icon.color=0xffCAD3F5 \
       icon.highlight_color=0xff728FCB \
       label.color=0xffCAD3F5 \
-      background.corner_radius=5\
-      background.height=40
+      background.corner_radius=5 background.height=40
 
 SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
 SPACES=()
@@ -30,7 +29,7 @@ for i in "${!SPACE_ICONS[@]}"; do
       sketchybar --add space space.$sid center \
             --set space.$sid associated_space=$sid \
             icon=${SPACE_ICONS[i]} \
-            icon.font="FiraCode Nerd Font:bold:17.0" \
+            icon.font="FiraCode Nerd Font Mono:bold:17.0" \
             icon.padding_left=12 \
             icon.padding_right=12 \
             icon.highlight_color=0xffE48FA8 \
@@ -39,18 +38,20 @@ for i in "${!SPACE_ICONS[@]}"; do
             background.color=0x003C3E4F \
             background.drawing=on \
             click_script="yabai -m space --focus $sid" \
-            background.corner_radius=8\
-            label.drawing=off 
+            background.corner_radius=8
 done
+
+SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
+SPACES=()
 
 ############## ITEM DEFAULTS ###############
 sketchybar --default label.padding_left=6 \
       label.padding_right=6 \
       icon.padding_left=6 \
       icon.padding_right=6 \
-      icon.font="FiraCode Nerd Font Mono:Bold:28.0" \
-      label.font="Geist Mono:Bold:14.0" \
-      background.height=30 
+      icon.font="GeistMono Nerd Font Mono:Bold:28.0" \
+      label.font="Space Mono:Bold:14.0" \
+      background.height=30 \
       background.padding_right=4 \
       background.padding_left=4 \
       background.corner_radius=6
@@ -60,7 +61,7 @@ sketchybar --add item clock_icon left \
       icon.color=0xff121219 \
       label.drawing=off \
       padding_left=4 \
-      background.color=0xff92B3F5 \
+      background.color=0xff92B3F5
 
 sketchybar --add item hour left \
       --set hour update_freq=20 \
@@ -82,12 +83,12 @@ sketchybar --add item date_icon left \
       padding_right=8 \
       padding_left=8 \
       label.drawing=off \
-      background.color=0xffF5A97E \
+      background.color=0xffF5A97E
 
 sketchybar \
       --add item date left --set date update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%d' | sed s/^0//)" \
-      --add item month left --set month update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%b')"\
-      --add item day left --set day update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%a')" 
+      --add item month left --set month update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%b')" \
+      --add item day left --set day update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%a')"
 
 ############## RIGHT ITEMS ##############
 
@@ -105,7 +106,7 @@ sketchybar --add item power_logo right \
       background.color=0xffB3E1A7
 
 sketchybar --add item volume right \
-      --set volume update_freq=10 \
+      --set volume update_freq=1 \
       icon.drawing=off \
       script="~/.config/sketchybar/plugins/volume.sh" \
       background.color=0x003C3E4F \
@@ -115,8 +116,7 @@ sketchybar --add item volume_icon right \
       --set volume_icon icon=󰕾 \
       icon.color=0xff121219 \
       label.drawing=off \
-      background.color=0xffC6A0F6\
-
+      background.color=0xffC6A0F6
 
 sketchybar --update
 echo "sketchybar configuration loaded..."

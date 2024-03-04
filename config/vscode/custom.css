@@ -151,6 +151,9 @@ footer#workbench\.parts\.statusbar {
   box-shadow: inset 0 0 0 1px #89b4fa,0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)  !important;
   border-radius: 8px !important;
 }
+.tab-border-top-container{
+  display: none !important;
+}
 
 .monaco-icon-label-container {
   padding-inline: 6px !important;
@@ -202,7 +205,8 @@ footer#workbench\.parts\.statusbar {
 }
 .statusbar-item-label{
   padding: 0px !important;
-  margin-inline: 5px !important;
+  padding-inline: 5px !important;
+  margin-inline: 0px !important;
 }
 .first-visible-item{
   margin-left: 5px !important
