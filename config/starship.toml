@@ -24,14 +24,14 @@ format = '[[$symbol $branch ](green)]($style)'
 
 [git_status]
 style = ""
-ahead = '[${count}](blue)'
-behind = '[${count}](yellow)'
+ahead = '[󰁞${count}](blue)'
+behind = '[󰁆${count}](yellow)'
 untracked = '[?${count}](purple)'
 modified = '[~${count}](yellow)'
 staged = '[+${count}](yellow)'
 renamed = '[\\${count}](purple)'
 deleted = '[-${count}](red)'
-conflicted = '[ ${count}](red)'
+conflicted = '[󱓌${count}](red)'
 format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [time]
