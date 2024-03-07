@@ -14,7 +14,7 @@ sketchybar --bar height=46 \
 
 ############## GLOBAL DEFAULTS ##############
 sketchybar --default updates=when_shown \
-      icon.font="GeistMono Nerd Font Mono:Bold:16.0" \
+      icon.font="SF Pro:Bold:16.0" \
       icon.color=0xffCAD3F5 \
       icon.highlight_color=0xff728FCB \
       label.color=0xffCAD3F5 \
@@ -29,7 +29,7 @@ for i in "${!SPACE_ICONS[@]}"; do
       sketchybar --add space space.$sid center \
             --set space.$sid associated_space=$sid \
             icon=${SPACE_ICONS[i]} \
-            icon.font="FiraCode Nerd Font Mono:bold:17.0" \
+            icon.font="SF Pro:bold:17.0" \
             icon.padding_left=12 \
             icon.padding_right=12 \
             icon.highlight_color=0xffE48FA8 \
@@ -49,18 +49,20 @@ sketchybar --default label.padding_left=6 \
       label.padding_right=6 \
       icon.padding_left=6 \
       icon.padding_right=6 \
-      icon.font="GeistMono Nerd Font Mono:Bold:28.0" \
-      label.font="Space Mono:Bold:14.0" \
-      background.height=30 \
+      icon.font="SF Pro Rounded:Regular:17" \
+      label.font="SF Pro Rounded:Bold:14.0" \
+      background.height=32 \
       background.padding_right=4 \
       background.padding_left=4 \
       background.corner_radius=6
 
 sketchybar --add item clock_icon left \
-      --set clock_icon icon= \
+      --set clock_icon icon=􀐬 \
+      icon.padding_right=8\
+      icon.padding_left=6\
       icon.color=0xff121219 \
       label.drawing=off \
-      padding_left=4 \
+      padding_left=3 \
       background.color=0xff92B3F5
 
 sketchybar --add item hour left \
@@ -78,7 +80,9 @@ sketchybar --add item min left \
       background.padding_left=-6
 
 sketchybar --add item date_icon left \
-      --set date_icon icon=󰃭 \
+      --set date_icon icon=􀉉 \
+      icon.padding_right=8\
+      icon.padding_left=6\
       icon.color=0xff121219 \
       padding_right=8 \
       padding_left=8 \
@@ -100,9 +104,11 @@ sketchybar --add item battery right \
       background.padding_left=0
 
 sketchybar --add item power_logo right \
-      --set power_logo icon= \
+      --set power_logo icon=􀛨 \
       icon.color=0xff121219 \
       label.drawing=off \
+      icon.padding_left=3\
+      icon.padding_right=3\
       background.color=0xffB3E1A7
 
 sketchybar --add item volume right \
@@ -113,7 +119,9 @@ sketchybar --add item volume right \
       background.padding_left=0
 
 sketchybar --add item volume_icon right \
-      --set volume_icon icon=󰕾 \
+      --set volume_icon icon=􀊡 \
+      icon.padding_right=7\
+      icon.padding_left=8\
       icon.color=0xff121219 \
       label.drawing=off \
       background.color=0xffC6A0F6
