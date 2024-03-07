@@ -120,8 +120,6 @@ sketchybar --add item volume right \
 
 sketchybar --add item volume_icon right \
       --set volume_icon icon=􀊡 \
-      icon.padding_right=7\
-      icon.padding_left=8\
       icon.color=0xff121219 \
       label.drawing=off \
       background.color=0xffC6A0F6
