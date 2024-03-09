@@ -29,7 +29,7 @@ for i in "${!SPACE_ICONS[@]}"; do
       sketchybar --add space space.$sid center \
             --set space.$sid associated_space=$sid \
             icon=${SPACE_ICONS[i]} \
-            icon.font="SF Pro:bold:17.0" \
+            icon.font="SF Pro Rounded:bold:17.0" \
             icon.padding_left=12 \
             icon.padding_right=12 \
             icon.highlight_color=0xffE48FA8 \
