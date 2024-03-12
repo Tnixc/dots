@@ -1,3 +1,4 @@
+# zmodload zsh/zprof
 # *Alias
 alias bs='brew services'
 alias cat='bat'
@@ -36,9 +37,9 @@ alias ls='eza --color=always --icons --group-directories-first' # my preferred l
 alias la='eza -a --color=always --icons --group-directories-first'  # all files and dirs
 alias ll='eza -l --color=always --icons --group-directories-first'  # long format
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # bun completions
 [ -s "/Users/tnixc/.bun/_bun" ] && source "/Users/tnixc/.bun/_bun"
@@ -51,3 +52,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 alias cd=z
+# zprof

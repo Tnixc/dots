@@ -26,8 +26,8 @@ ACTIVE_BG = as_rgb(color_as_int(opts.active_tab_background))
 SEPARATOR_SYMBOL, SOFT_SEPARATOR_SYMBOL = ("", "")
 SEPARATOR_SYMBOL_RIGHT = ""
 TRUNCATION_SYMBOL = "/⟜⊸/"
-ICON, ICON_CAL, ICON_TIME, ICON_DIR = (" ↯ ", " 󰃭", " ", " 󰉋 ")
-RIGHT_MARGIN = -5
+ICON, ICON_CAL, ICON_TIME, ICON_DIR = (" 􀆔  ", " 􀉉 ", " 􀐫 ", " 􀈖 ")
+RIGHT_MARGIN = -3
 REFRESH_TIME = 1
 right_status_length = -1
 

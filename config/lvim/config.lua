@@ -8,6 +8,12 @@ lvim.plugins = {
   { "stevearc/conform.nvim" },
   { "mg979/vim-visual-multi" },
   {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" }
   },
@@ -55,15 +61,19 @@ lvim.plugins = {
       })
     end,
   },
-  -- {
-  --   "zbirenbaum/copilot-cmp",
-  --   config = function()
-  --     require("copilot_cmp").setup({
-  --       suggestion = { enabled = true },
-  --       panel = { enabled = true }
-  --     })
-  --   end
-  -- },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
+      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
+    },
+    opts = {
+      debug = false, -- Enable debugging
+      -- See Configuration section for rest
+    },
+    -- See Commands section for default commands if you want to lazy load on them
+  },
   {
     "nvim-pack/nvim-spectre",
     event = "BufRead",
@@ -111,21 +121,19 @@ vim.wo.foldlevel = 99
 vim.wo.foldtext =
 [['󰁃...'. (v:foldend - v:foldstart + 1) . ' lines ' . substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g')."...".trim(getline(v:foldend)) | ]]
 
--- Format command
-vim.api.nvim_create_user_command("Format", function(args)
-  local range = nil
-  if args.count ~= -1 then
-    local end_line = vim.api.nvim_buf_get_lines(0, args.line2 - 1, args.line2, true)[1]
-    range = {
-      start = { args.line1, 0 },
-      ["end"] = { args.line2, end_line:len() },
-    }
-  end
-  require("conform").format({ async = true, lsp_fallback = true, range = range })
-end, { range = true })
-
 lvim.builtin.terminal.open_mapping = "<M-l>"
 lvim.builtin.terminal.execs = {}
+
+
+lvim.builtin.nvimtree.setup.git.enable = true
+lvim.builtin.nvimtree.setup.renderer = {
+  highlight_git = true,
+  icons = {
+    show = {
+      git = true,
+    },
+  }
+}
 
 vim.opt.wrap = true
 vim.opt.linebreak = true
