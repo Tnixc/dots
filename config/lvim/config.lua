@@ -5,12 +5,16 @@
 lvim.plugins = {
   { "ThePrimeagen/vim-be-good" },
   { "pocco81/auto-save.nvim" },
-  { "stevearc/conform.nvim" },
+  {
+    "NStefan002/visual-surround.nvim",
+    config = function()
+      require("visual-surround").setup({})
+    end,
+  },
   { "mg979/vim-visual-multi" },
   {
     'stevearc/oil.nvim',
     opts = {},
-    -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
@@ -69,10 +73,8 @@ lvim.plugins = {
       { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
     },
     opts = {
-      debug = false, -- Enable debugging
-      -- See Configuration section for rest
+      debug = false,
     },
-    -- See Commands section for default commands if you want to lazy load on them
   },
   {
     "nvim-pack/nvim-spectre",
@@ -104,7 +106,14 @@ lvim.plugins = {
       })
     end
   },
-  { 'wakatime/vim-wakatime', lazy = false }
+  { 'wakatime/vim-wakatime', lazy = false },
+  {
+    "olrtg/nvim-emmet",
+    config = function()
+      vim.keymap.set({ "n", "v" }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
+    end,
+  },
+  { "LhKipp/nvim-nu" }
 }
 
 vim.api.nvim_command("set termguicolors")
@@ -134,6 +143,38 @@ lvim.builtin.nvimtree.setup.renderer = {
     },
   }
 }
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = "css,eruby,html,htmldjango,javascriptreact,less,pug,sass,scss,typescriptreact,vue",
+  callback = function()
+    vim.lsp.start({
+      cmd = { "emmet-language-server", "--stdio" },
+      root_dir = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1]),
+      -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
+      -- **Note:** only the options listed in the table are supported.
+      init_options = {
+        ---@type table<string, string>
+        includeLanguages = {},
+        --- @type string[]
+        excludeLanguages = {},
+        --- @type string[]
+        extensionsPath = {},
+        --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/preferences/)
+        preferences = {},
+        --- @type boolean Defaults to `true`
+        showAbbreviationSuggestions = true,
+        --- @type "always" | "never" Defaults to `"always"`
+        showExpandedAbbreviation = "always",
+        --- @type boolean Defaults to `false`
+        showSuggestionsAsSnippets = false,
+        --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/syntax-profiles/)
+        syntaxProfiles = {},
+        --- @type table<string, string> [Emmet Docs](https://docs.emmet.io/customization/snippets/#variables)
+        variables = {},
+      },
+    })
+  end,
+})
 
 vim.opt.wrap = true
 vim.opt.linebreak = true
