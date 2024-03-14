@@ -18,10 +18,6 @@ lvim.plugins = {
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" }
-  },
-  {
     'petertriho/nvim-scrollbar',
     config = function()
       require('scrollbar').setup()

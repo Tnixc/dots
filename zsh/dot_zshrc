@@ -13,11 +13,14 @@ alias rm=trash
 alias tl=trash-list
 alias tree='eza --tree --icons'
 alias te='tl&&trash-empty'
-alias q=exit
 alias spt=spotify_player
 alias fzf='fzf --color=16 --border=rounded --margin=1,3 --preview="bat {}"'
 alias zf='lvim $(fzf --color=16 --border=rounded --margin=1,3 --preview="bat {}")'
-
+alias q=exit
+alias g=git
+alias ga='git add'
+alias gc='git commit -m'
+alias f='open .'
 #* PATH
 export EDITOR='lvim'
 export PATH="/Users/tnixc/ubin:$PATH"
