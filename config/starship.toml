@@ -29,7 +29,7 @@ behind = '[󰁆${count}](yellow)'
 untracked = '[?${count}](purple)'
 modified = '[~${count}](yellow)'
 staged = '[+${count}](cyan)'
-renamed = '[\\${count}](purple)'
+renamed = '[*${count}](purple)'
 deleted = '[-${count}](red)'
 conflicted = '[󱓌${count}](red)'
 format = '([\[$all_status$ahead_behind\]]($style) )'
@@ -51,7 +51,7 @@ format = '[took](yellow) [$duration](bold yellow)'
 [shell]
 zsh_indicator = 'zsh'
 nu_indicator = 'nu'
-unknown_indicator = 'mystery shell'
+unknown_indicator = '<?>'
 style = 'yellow'
 disabled = false
 
