@@ -2,9 +2,12 @@
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
 -- Forum: https://www.reddit.com/r/lunarvim/ Discord: https://discord.com/invite/Xb9B4Ny
 
+-- require("emmet")
+
 lvim.plugins = {
   { "ThePrimeagen/vim-be-good" },
   { "pocco81/auto-save.nvim" },
+  { "kdheepak/lazygit.nvim" },
   {
     "NStefan002/visual-surround.nvim",
     config = function()
@@ -103,12 +106,7 @@ lvim.plugins = {
     end
   },
   { 'wakatime/vim-wakatime', lazy = false },
-  {
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set({ "n", "v" }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
-    end,
-  },
+  { "olrtg/nvim-emmet", },
   { "LhKipp/nvim-nu" }
 }
 
@@ -147,7 +145,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
       cmd = { "emmet-language-server", "--stdio" },
       root_dir = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1]),
       -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
-      -- **Note:** only the options listed in the table are supported.
       init_options = {
         ---@type table<string, string>
         includeLanguages = {},
@@ -172,17 +169,24 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
-vim.opt.wrap = true
-vim.opt.linebreak = true
+lvim.builtin.telescope.defaults = {
+  initial_mode = "insert",
+  layout_config = {
+    preview_cutoff = 120,
+    prompt_position = "bottom",
+    width = 0.75,
+    height = 0.75,
+  },
+  layout_strategy = "horizontal",
+}
 
-vim.keymap.set('n', '<M-w>', ':BufferKill<CR>', { noremap = true })
-vim.keymap.set('n', '<M-Tab>', ':BufferLineCycleNext<CR>', { noremap = true })
-vim.keymap.set('n', '<M-1>', ':BufferLineGoToBuffer 1 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-2>', ':BufferLineGoToBuffer 2 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-3>', ':BufferLineGoToBuffer 3 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-4>', ':BufferLineGoToBuffer 4 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-5>', ':BufferLineGoToBuffer 5 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-6>', ':BufferLineGoToBuffer 6 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-7>', ':BufferLineGoToBuffer 7 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-8>', ':BufferLineGoToBuffer 8 <CR>', { noremap = true })
-vim.keymap.set('n', '<M-9>', ':BufferLineGoToBuffer 9 <CR>', { noremap = true })
+local opts = { noremap = true }
+
+-- Buffer management
+vim.keymap.set('n', '<M-w>', ':BufferKill<CR>', opts)
+vim.keymap.set('n', '<M-Tab>', ':BufferLineCycleNext<CR>', opts)
+
+-- Quickly switch to buffer number
+for i = 1, 9 do
+  vim.keymap.set('n', '<M-' .. i .. '>', ':BufferLineGoToBuffer ' .. i .. ' <CR>', opts)
+end
