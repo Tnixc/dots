@@ -119,7 +119,7 @@ lvim.builtin.lualine.sections.lualine_c = {
   "%=",
   "filename",
 }
-lvim.builtin.lualine.sections.lualine_x = { "lsp_name", "lsp_progress", "filetype" }
+lvim.builtin.lualine.sections.lualine_x = { "lsp", "treesitter", "filetype" }
 lvim.builtin.lualine.sections.lualine_y = { "searchcount", "progress" }
 lvim.builtin.lualine.sections.lualine_z = { "location" }
 
