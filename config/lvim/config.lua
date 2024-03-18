@@ -107,6 +107,21 @@ lvim.plugins = {
   { "olrtg/nvim-emmet", },
   { "LhKipp/nvim-nu" }
 }
+local c = require("lvim.core.lualine.colors")
+lvim.builtin.lualine.options.theme = "auto"
+lvim.builtin.lualine.options.component_separators = { left = "", right = "/" }
+lvim.builtin.lualine.options.section_separators = { left = "", right = "" }
+lvim.builtin.lualine.sections.lualine_a = { "mode" }
+lvim.builtin.lualine.sections.lualine_b = { "branch" }
+lvim.builtin.lualine.sections.lualine_c = {
+  { "diff", diff_color = { added = { fg = c.green }, modified = { fg = c.yellow }, removed = { fg = c.red } } },
+  "diagnostics",
+  "%=",
+  "filename",
+}
+lvim.builtin.lualine.sections.lualine_x = { "lsp_name", "lsp_progress", "filetype" }
+lvim.builtin.lualine.sections.lualine_y = { "searchcount", "progress" }
+lvim.builtin.lualine.sections.lualine_z = { "location" }
 
 vim.api.nvim_command("set termguicolors")
 vim.api.nvim_command("set t_Co=256")
