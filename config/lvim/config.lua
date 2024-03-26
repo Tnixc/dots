@@ -3,6 +3,7 @@
 -- Forum: https://www.reddit.com/r/lunarvim/ Discord: https://discord.com/invite/Xb9B4Ny
 
 lvim.plugins = {
+  -- { 'nvim-treesitter/nvim-treesitter' },
   { "ThePrimeagen/vim-be-good" },
   { "pocco81/auto-save.nvim" },
   { "kdheepak/lazygit.nvim" },
@@ -62,6 +63,7 @@ lvim.plugins = {
       })
     end,
   },
+  { "AndreM222/copilot-lualine" },
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
@@ -99,9 +101,17 @@ lvim.plugins = {
       require('nvim-highlight-colors').setup({
         render = 'background', -- or 'foreground'
         enable_named_colors = false,
-        enable_tailwind = true,
+        enable_tailwind = false,
       })
     end
+  },
+  {
+    "luckasRanarison/tailwind-tools.nvim",
+    opts = {
+        document_color = {
+        kind = "background",
+      }
+    } -- your configuration
   },
   { 'wakatime/vim-wakatime', lazy = false },
   { "olrtg/nvim-emmet", },
@@ -118,7 +128,7 @@ lvim.builtin.lualine.sections.lualine_c = {
   "diagnostics",
   "filename",
 }
-lvim.builtin.lualine.sections.lualine_x = { "lsp", "treesitter", "filetype" }
+lvim.builtin.lualine.sections.lualine_x = { "lsp", "copilot", "treesitter", "filetype" }
 lvim.builtin.lualine.sections.lualine_y = { "searchcount", "progress" }
 lvim.builtin.lualine.sections.lualine_z = { "location" }
 
@@ -138,7 +148,6 @@ vim.wo.foldtext =
 
 lvim.builtin.terminal.open_mapping = "<M-l>"
 lvim.builtin.terminal.execs = {}
-
 
 lvim.builtin.nvimtree.setup.git.enable = true
 lvim.builtin.nvimtree.setup.renderer = {

@@ -383,3 +383,6 @@
 2024/03/17 (16:14:56) | ERROR: Invalid RGB decimal value: "&quot;#e0af68&quot;"
 2024/03/17 (16:14:56) | ERROR: Invalid RGB decimal value: "&quot;#f7768e&quot;"
 2024/03/17 (16:14:56) | ERROR: Invalid RGB decimal value: "&quot;#9ece6a&quot;"
+
+2024/03/25 (23:08:05) | ===> btop++ v.1.3.2
+2024/03/25 (23:08:05) | ERROR: Exception during Config::unlock() : unordered_map::at

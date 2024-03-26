@@ -18,6 +18,7 @@ alias fzf='fzf --color=16 --border=rounded --margin=1,3 --preview="bat {}"'
 alias zf='lvim $(fzf --color=16 --border=rounded --margin=1,3 --preview="bat {}")'
 alias q=exit
 alias g=git
+alias lz=lazygit
 alias ga='git add'
 alias gc='git commit -m'
 alias f='open .'
@@ -56,3 +57,11 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 alias cd=z
 # zprof
+
+# pnpm
+export PNPM_HOME="/Users/tnixc/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
