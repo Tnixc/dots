@@ -1,5 +1,4 @@
 lvim.plugins = {
-  -- { 'nvim-treesitter/nvim-treesitter' },
   { "ThePrimeagen/vim-be-good" },
   { "pocco81/auto-save.nvim" },
   { "kdheepak/lazygit.nvim" },
