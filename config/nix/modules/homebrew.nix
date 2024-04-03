@@ -9,18 +9,18 @@
     onActivation = {
       autoUpdate = true;
       # 'zap': uninstalls all formulae(and related files) not listed here.
-      # cleanup = "zap";
+      cleanup = "zap";
     };
 
     taps = [
     ];
 
     brews = [
-      "wget"
     ];
 
     casks = [
-      "chromium"
+      "raycast"
+      "kitty"
     ];
   };
 }

@@ -10,6 +10,29 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
   let
     configuration = { pkgs, ... }: {
+
+	  environment.systemPackages = with pkgs; [
+    # Dev tools
+    eza
+    neovim
+    git
+    just # use Justfile to simplify nix-darwin's commands 
+    fzf
+    fastfetch
+    nushell
+    lunarvim
+    starship
+    bat
+    trash-cli
+
+    # Desktop
+    yabai
+    skhd
+    sketchybar
+    jankyborders
+
+  ];
+
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       nix.package = pkgs.nix;
@@ -18,7 +41,7 @@
       nix.settings.experimental-features = "nix-command flakes";
 
       # Create /etc/zshrc that loads the nix-darwin environment.
-      # programs.zsh.enable = true;  # default shell on catalina
+      programs.zsh.enable = true;  # default shell on catalina
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -42,6 +65,7 @@
       modules = [ 
         configuration
         ./modules/homebrew.nix
+        #./modules/nixpkgs.nix
       ];
     };
 
