@@ -1,5 +1,7 @@
 # Dotfiles for macOS
 
+## !!! I am currently in the process of switching to nix-darwin so probably don't use this !!!
+
 I use [gnu stow](https://www.gnu.org/software/stow/) to manage my dotfiles.
 
 I typically use nu-shell, but I have a config for zsh too.
