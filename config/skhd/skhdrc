@@ -13,7 +13,6 @@ alt - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
 
 # Launch terminal
 alt - 0x24 : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-cmd + alt + ctrl + shift - 0x31 : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~ --start-as=maximized --title="quake" --override remember_window_size=no --override initial_window_width=9999 --override initial_window_height=600 
 
 # restart Yabi, SpaceBar, and SKHD
 alt + shift - r : killall /opt/homebrew/bin/yabai&&/opt/homebrew/bin/yabai --start-service&&skhd --reload
