@@ -12,7 +12,7 @@ alt - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
 # cmd + alt + ctrl + shift = caps lock
 
 # Launch terminal
-alt - 0x24 : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+alt - 0x24 : kitty --single-instance -d ~
 
 # restart Yabi, SpaceBar, and SKHD
 alt + shift - r : killall /opt/homebrew/bin/yabai&&/opt/homebrew/bin/yabai --start-service&&skhd --reload

@@ -48,7 +48,6 @@ yabai -m rule --add label="About This Mac" app="System Information" title="About
 yabai -m rule --add label="System Information" app="System Information" title="System Information" manage=off
 yabai -m rule --add label="Raycast" app="Raycast" manage=off
 yabai -m rule --add label="Kap" app="^Kap$" manage=off
-yabai -m rule --add label="Kitty" app="^kitty$" title="quake" manage=off
 
 borders active_color=0xffCAD3F5 inactive_color=0xbb282E44 hidpi=on width=5.0 2>/dev/null 1>&2 &
 
