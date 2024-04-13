@@ -1,6 +1,6 @@
 {
   // The name of the Zed theme to use for the UI
-  "theme": "Github Dark",
+  "theme": "Rosé Pine",
   // The name of a base set of key bindings to use.
   // This setting can take four values, each named after another
   // text editor:
@@ -48,7 +48,7 @@
   // which gives the same size as all other panes.
   "active_pane_magnification": 1.1,
   // Whether to enable vim modes and key bindings
-  "vim_mode": false,
+  "vim_mode": true,
   // Whether to show the informational hover box when moving the mouse
   // over symbols in the editor.
   "hover_popover_enabled": true,
@@ -74,7 +74,7 @@
   "use_on_type_format": true,
   // Controls whether copilot provides suggestion immediately
   // or waits for a `copilot::Toggle`
-  "show_copilot_suggestions": true,
+  "show_copilot_suggestions": false,
   // Whether to show tabs and spaces in the editor.
   // This setting can take two values:
   //

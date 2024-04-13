@@ -15,7 +15,7 @@ case ${PERCENTAGE} in
   ;;
   [1-2][0-9]) ICON="􀛩"
   ;;
-  *) ICON=""
+  *) ICON="􀛩"
 esac
 
 if [[ $CHARGING != "" ]]; then
