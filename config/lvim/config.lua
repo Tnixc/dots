@@ -17,9 +17,9 @@ vim.wo.foldlevel = 99
 vim.wo.foldtext =
 [[' 󰁃...'. (v:foldend - v:foldstart + 1) . ' lines ' . substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g')."...".trim(getline(v:foldend)) | ]]
 
+
 lvim.builtin.terminal.open_mapping = "<M-l>"
 lvim.builtin.terminal.execs = {}
-
 
 lvim.builtin.nvimtree.setup.git.enable = true
 lvim.builtin.nvimtree.setup.renderer = {
@@ -49,3 +49,4 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
   opts.max_width= opts.max_width or 80
   return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
+

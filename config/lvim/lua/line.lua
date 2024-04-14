@@ -4,7 +4,6 @@ local clients_lsp = function()
   if next(clients) == nil then
     return ''
   end
-
   local c = {}
   for _, client in pairs(clients) do
     table.insert(c, client.name)
@@ -27,3 +26,8 @@ lvim.builtin.lualine.sections.lualine_c = {
 lvim.builtin.lualine.sections.lualine_x = { clients_lsp, "filetype" }
 lvim.builtin.lualine.sections.lualine_y = { "searchcount", "progress" }
 lvim.builtin.lualine.sections.lualine_z = { "location" }
+vim.o.cmdheight=0
+
+
+
+
