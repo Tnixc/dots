@@ -41,12 +41,32 @@ lvim.builtin.telescope.defaults = {
   },
   layout_strategy = "horizontal",
 }
-
+require("lvim.lsp.manager").setup("cssls", {
+  settings = {
+    css = {
+      validate = true,
+      lint = {
+        unknownAtRules = "ignore"
+      }
+    },
+    scss = {
+      validate = true,
+      lint = {
+        unknownAtRules = "ignore"
+      }
+    },
+    less = {
+      validate = true,
+      lint = {
+        unknownAtRules = "ignore"
+      }
+    },
+  },
+})
 local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
 function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
   opts = opts or {}
   opts.border = opts.border or 'single'
-  opts.max_width= opts.max_width or 80
+  opts.max_width = opts.max_width or 80
   return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
-
