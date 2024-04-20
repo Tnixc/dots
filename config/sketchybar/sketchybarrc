@@ -90,9 +90,9 @@ sketchybar --add item date_icon left \
       background.color=0xffF5A97E
 
 sketchybar \
-      --add item date left --set date update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%d' | sed s/^0//)" \
-      --add item month left --set month update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%b')" \
-      --add item day left --set day update_freq=120 icon.drawing=off padding_right=8 label="$(date '+%a')"
+      --add item date left --set date update_freq=120 icon.drawing=off padding_right=8 script="~/.config/sketchybar/plugins/day.sh" \
+      --add item month left --set month update_freq=120 icon.drawing=off padding_right=8 script="~/.config/sketchybar/plugins/month.sh" \
+      --add item day left --set day update_freq=120 icon.drawing=off padding_right=8 script="~/.config/sketchybar/plugins/dayofweek.sh"
 
 ############## RIGHT ITEMS ##############
 
