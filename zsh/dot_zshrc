@@ -22,6 +22,7 @@ alias lz=lazygit
 alias ga='git add'
 alias gc='git commit -m'
 alias f='open .'
+alias py='source ~/dev/env3.11/bin/activate'
 #* PATH
 export EDITOR='lvim'
 export PATH="/Users/tnixc/ubin:$PATH"
