@@ -1,6 +1,6 @@
 {
   // The name of the Zed theme to use for the UI
-  "theme": "Rosé Pine Moon",
+  "theme": "Ayu Mirage",
   // The name of a base set of key bindings to use.
   // This setting can take four values, each named after another
   // text editor:
@@ -48,7 +48,7 @@
   // which gives the same size as all other panes.
   "active_pane_magnification": 1.1,
   // Whether to enable vim modes and key bindings
-  "vim_mode": true,
+  "vim_mode": false,
   // Whether to show the informational hover box when moving the mouse
   // over symbols in the editor.
   "hover_popover_enabled": true,
