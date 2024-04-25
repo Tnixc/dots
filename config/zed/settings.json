@@ -124,7 +124,7 @@
   // Inlay hint related settings
   "inlay_hints": {
     // Global switch to toggle hints on and off, switched off by default.
-    "enabled": false,
+    "enabled": true,
     // Toggle certain types of hints on and off, all switched on by default.
     "show_type_hints": true,
     "show_parameter_hints": true,
@@ -412,7 +412,7 @@
     // "font_size": "15",
     // Set the terminal's font family. If this option is not included,
     // the terminal will default to matching the buffer's font family.
-    "font_family": "JetBrainsMonoNL Nerd Font",
+    "font_family": "Liga SFMono Nerd Font"
   },
   // Difference settings for semantic_index
   "semantic_index": {
@@ -493,11 +493,11 @@
     // }
   },
   "vim": {
-          // "always": use system clipboard
-          // "never": don't use system clipboard
-          // "on_yank": use system clipboard for yank operations
-          "use_system_clipboard": "always",
-          // Lets `f` and `t` motions extend across multiple lines
-          "use_multiline_find": true
-      }
+    // "always": use system clipboard
+    // "never": don't use system clipboard
+    // "on_yank": use system clipboard for yank operations
+    "use_system_clipboard": "always",
+    // Lets `f` and `t` motions extend across multiple lines
+    "use_multiline_find": true
+  }
 }
