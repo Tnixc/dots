@@ -1,6 +1,6 @@
 {
   // The name of the Zed theme to use for the UI
-  "theme": "Ayu Mirage",
+  "theme": "Tokyo",
   // The name of a base set of key bindings to use.
   // This setting can take four values, each named after another
   // text editor:
@@ -36,7 +36,7 @@
   //         },
   "buffer_line_height": "comfortable",
   // The name of a font to use for rendering text in the UI
-  "ui_font_family": "Zed Sans",
+  "ui_font_family": "SF Mono",
   // The OpenType features to enable for text in the UI
   "ui_font_features": {
     // Disable ligatures:
@@ -48,7 +48,7 @@
   // which gives the same size as all other panes.
   "active_pane_magnification": 1.1,
   // Whether to enable vim modes and key bindings
-  "vim_mode": false,
+  "vim_mode": true,
   // Whether to show the informational hover box when moving the mouse
   // over symbols in the editor.
   "hover_popover_enabled": true,
@@ -491,5 +491,13 @@
     //         }
     //     }
     // }
-  }
+  },
+  "vim": {
+          // "always": use system clipboard
+          // "never": don't use system clipboard
+          // "on_yank": use system clipboard for yank operations
+          "use_system_clipboard": "always",
+          // Lets `f` and `t` motions extend across multiple lines
+          "use_multiline_find": true
+      }
 }
