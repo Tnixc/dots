@@ -583,17 +583,20 @@
       "cmd-t": "workspace::NewTerminal"
     }
   },
-{
-  "context": "Dock || Workspace || Editor || Pane || Terminal",
-      "bindings": {
-          "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-          "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-          "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-          "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-"¬": "workspace::ToggleBottomDock",
-"ø": "workspace::NewCenterTerminal",
-"alt-h": "workspace::ToggleLeftDock",
-"": "file_finder::Toggle"
-      }
-}
+  {
+    "context": "Dock || Workspace || Editor || Pane || Terminal",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "¬": "workspace::ToggleBottomDock",
+      "ø": "workspace::NewCenterTerminal",
+      "alt-h": "workspace::ToggleLeftDock",
+      "alt-t": "file_finder::Toggle",
+      "alt-w": "pane::CloseActiveItem",
+      "alt-tab": "tab_switcher::Toggle",
+      "å": "editor::Format"
+    }
+  }
 ]
