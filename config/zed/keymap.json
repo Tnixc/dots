@@ -590,13 +590,15 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "¬": "workspace::ToggleBottomDock",
-      "ø": "workspace::NewCenterTerminal",
+      "alt-l": "workspace::ToggleBottomDock",
+      "alt-o": "workspace::NewCenterTerminal",
       "alt-h": "workspace::ToggleLeftDock",
       "alt-t": "file_finder::Toggle",
       "alt-w": "pane::CloseActiveItem",
+      "alt-shift-t": "pane::ReopenClosedItem",
       "alt-tab": "tab_switcher::Toggle",
-      "å": "editor::Format"
+      "alt-a": "editor::Format",
+      "alt-i": "editor::Tab"
     }
   }
 ]
