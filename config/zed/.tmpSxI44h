@@ -1,9 +1,0 @@
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"github-theme","version":"0.0.2"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"java","version":"0.0.2"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"log","version":"0.0.2"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"nu","version":"0.0.1"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"pkl","version":"0.0.1"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"sql","version":"0.0.2"}
-{"signed_in":false,"milliseconds_since_first_event":0,"type":"Setting","setting":"theme","value":"One Dark"}
-{"signed_in":false,"milliseconds_since_first_event":1,"type":"Setting","setting":"keymap","value":"VSCode"}
-{"signed_in":false,"milliseconds_since_first_event":1,"type":"App","operation":"open"}
