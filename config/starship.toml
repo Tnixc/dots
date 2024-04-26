@@ -6,7 +6,6 @@ $shell\
 $directory\
 $git_branch\
 $git_status\
-[|-](cyan)\
 $character
 
 """
@@ -41,8 +40,8 @@ format = '[ 󱑒 $time ](purple)'
 
 [character]
 disabled = false
-success_symbol = '[->](bold green)'
-error_symbol = '[->](bold red)'
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
 
 [cmd_duration]
 min_time = 500
