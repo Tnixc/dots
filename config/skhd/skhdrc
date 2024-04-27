@@ -4,15 +4,15 @@ alt - s : /opt/homebrew/bin/yabai -m space --layout float
 
 # floating windows
 alt + shift - space : /opt/homebrew/bin/yabai -m window --toggle float
-alt - c  : /opt/homebrew/bin/yabai -m window --toggle float&&/opt/homebrew/bin/yabai -m window --grid 12:12:1:1:10:10
+cmd + alt + ctrl + shift - n  : /opt/homebrew/bin/yabai -m window --toggle float&&/opt/homebrew/bin/yabai -m window --grid 12:12:1:1:10:10
 
 # enter fullscreen mode for the focused container
-alt - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
+cmd + alt + ctrl + shift - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
 ####### Shortcut Hotkeys #############
 # cmd + alt + ctrl + shift = caps lock
 
 # Launch terminal
-alt - 0x24 : kitty --single-instance -d ~
+cmd + alt + ctrl + shift - 0x24 : kitty --single-instance -d ~
 
 # restart Yabi, SpaceBar, and SKHD
 alt + shift - r : killall /opt/homebrew/bin/yabai&&/opt/homebrew/bin/yabai --start-service&&skhd --reload
@@ -30,10 +30,10 @@ cmd + alt + ctrl + shift - s : /opt/homebrew/bin/yabai -m window --resize top:0:
 cmd + alt + ctrl + shift - a : /opt/homebrew/bin/yabai -m window --resize left:-20:0 || /opt/homebrew/bin/yabai -m window --resize right:-20:0
 cmd + alt + ctrl + shift - d : /opt/homebrew/bin/yabai -m window --resize left:20:0 || /opt/homebrew/bin/yabai -m window --resize right:20:0
 
-cmd + alt + ctrl + shift - h : /opt/homebrew/bin/yabai -m window --swap west
-cmd + alt + ctrl + shift - j: /opt/homebrew/bin/yabai -m window --swap south
-cmd + alt + ctrl + shift - k: /opt/homebrew/bin/yabai -m window --swap north
-cmd + alt + ctrl + shift - l: /opt/homebrew/bin/yabai -m window --swap east
+cmd + alt + ctrl + shift - h : /opt/homebrew/bin/yabai -m window --focus west
+cmd + alt + ctrl + shift - j: /opt/homebrew/bin/yabai -m window --focus south
+cmd + alt + ctrl + shift - k: /opt/homebrew/bin/yabai -m window --focus north
+cmd + alt + ctrl + shift - l: /opt/homebrew/bin/yabai -m window --focus east
 
 
 # Switch spaces and move windows

@@ -325,7 +325,6 @@
           "replace_newest": true
         }
       ],
-      "shift-k": "editor::Hover",
       "cmd-/": [
         "editor::ToggleComments",
         {
@@ -590,7 +589,9 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "alt-j": "workspace::ToggleBottomDock",
+      "alt-l": "workspace::ToggleBottomDock",
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
       "alt-g": "workspace::ToggleZoom",
       "alt-o": "workspace::NewCenterTerminal",
       "alt-h": "workspace::ToggleLeftDock",
@@ -599,7 +600,8 @@
       "alt-shift-t": "pane::ReopenClosedItem",
       "alt-tab": "tab_switcher::Toggle",
       "alt-a": "editor::Format",
-      "alt-i": "editor::Tab"
+      "alt-i": "editor::Tab",
+      "alt-m": "editor::Hover"
     }
   }
 ]
