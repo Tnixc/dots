@@ -594,14 +594,15 @@
       "alt-k": "editor::MoveLineUp",
       "alt-g": "workspace::ToggleZoom",
       "alt-o": "workspace::NewCenterTerminal",
-      "alt-h": "workspace::ToggleLeftDock",
+      "alt-h": "workspace::ToggleRightDock",
       "alt-t": "file_finder::Toggle",
       "alt-w": "pane::CloseActiveItem",
       "alt-shift-t": "pane::ReopenClosedItem",
       "alt-tab": "tab_switcher::Toggle",
       "alt-a": "editor::Format",
       "alt-i": "editor::Tab",
-      "alt-m": "editor::Hover"
+      "alt-m": "editor::Hover",
+      "alt-d": "diagnostics::Deploy"
     }
   }
 ]
