@@ -600,9 +600,8 @@
       "alt-shift-t": "pane::ReopenClosedItem",
       "alt-tab": "tab_switcher::Toggle",
       "alt-a": "editor::Format",
-      "alt-i": "editor::Tab",
-      "alt-m": "editor::Hover",
-      "alt-d": "diagnostics::Deploy"
+      "alt-d": "diagnostics::Deploy",
+      "alt-i": "editor::Hover",
     }
   }
 ]
