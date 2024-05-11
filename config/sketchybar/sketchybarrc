@@ -10,7 +10,7 @@ sketchybar --bar height=46 \
       color=0xE725273A \
       shadow=off \
       border_width=1 \
-      border_color=0x881A1B26
+      border_color=0x44CAD3F5
 
 ############## GLOBAL DEFAULTS ##############
 sketchybar --default updates=when_shown \

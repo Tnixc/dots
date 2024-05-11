@@ -1,6 +1,6 @@
 {
   // The name of the Zed theme to use for the UI
-  "theme": "Rosé Pine",
+  "theme": "tnixc/tokyo",
   // The name of a base set of key bindings to use.
   // This setting can take four values, each named after another
   // text editor:
@@ -253,7 +253,7 @@
   // spaces.
   "hard_tabs": false,
   // How many columns a tab should occupy.
-  "tab_size": 2,
+  "tab_size": 4,
   // Control what info is collected by Zed.
   "telemetry": {
     // Send debug info like crash reports.
@@ -433,7 +433,7 @@
   // Different settings for specific languages.
   "languages": {
     "Rust": {
-      "show_copilot_suggestions": false
+      "show_copilot_suggestions": true
     },
     "Plain Text": {
       "soft_wrap": "preferred_line_length"
@@ -452,6 +452,7 @@
       "tab_size": 2
     },
     "TypeScript": {
+      "show_copilot_suggestions": true,
       "tab_size": 2
     },
     "TSX": {
