@@ -16,7 +16,7 @@
     "copilot": true
   },
   // The name of a font to use for rendering text in the editor
-  "buffer_font_family": "LigaBerkeleyMono Nerd Font",
+  "buffer_font_family": "Berkeley Mono",
   // The OpenType features to enable for text in the editor.
   "buffer_font_features": {
     // Disable ligatures:
@@ -36,7 +36,7 @@
   //         },
   "buffer_line_height": "comfortable",
   // The name of a font to use for rendering text in the UI
-  "ui_font_family": "LigaBerkeleyMono Nerd Font",
+  "ui_font_family": "Berkeley Mono",
   // The OpenType features to enable for text in the UI
   "ui_font_features": {
     // Disable ligatures:
@@ -218,7 +218,7 @@
   // when saving it.
   "ensure_final_newline_on_save": false,
   // Whether or not to perform a buffer format before saving
-  "ormat_on_save": "off",
+  "format_on_save": "off",
   // How to perform a buffer format. This setting can take 4 values:
   //
   // 1. Format code using the current language server:
@@ -240,12 +240,12 @@
   // three values:
   //
   // 1. Do not soft wrap.
-  //      "soft_wrap": "none",
+  "soft_wrap": "none",
   // 2. Soft wrap lines that overflow the editor:
   //      "soft_wrap": "editor_width",
   // 3. Soft wrap lines at the preferred line length
   //      "soft_wrap": "preferred_line_length",
-  "soft_wrap": "editor_width",
+  // "soft_wrap": "editor_width",
   // The column at which to soft-wrap lines, for buffers where soft-wrap
   // is enabled.
   "preferred_line_length": 160,
@@ -253,7 +253,7 @@
   // spaces.
   "hard_tabs": false,
   // How many columns a tab should occupy.
-  "tab_size": 4,
+  // "tab_size": 4,
   // Control what info is collected by Zed.
   "telemetry": {
     // Send debug info like crash reports.
@@ -271,7 +271,16 @@
   // Add files or globs of files that will be excluded by Zed entirely:
   // they will be skipped during FS scan(s), file tree and file search
   // will lack the corresponding file entries.
-  "file_scan_exclusions": ["**/.git", "**/.svn", "**/.hg", "**/CVS", "**/.DS_Store", "**/Thumbs.db", "**/.classpath", "**/.settings"],
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings"
+  ],
   // Git gutter behavior configuration.
   "git": {
     // Control whether the git gutter is shown. May take 2 values:
@@ -284,7 +293,9 @@
   "copilot": {
     // The set of glob patterns for which copilot should be disabled
     // in any matching file.
-    "disabled_globs": [".env"]
+    "disabled_globs": [
+      ".env"
+    ]
   },
   // Settings specific to journaling
   "journal": {
@@ -393,7 +404,12 @@
         // Default directories to search for virtual environments, relative
         // to the current working directory. We recommend overriding this
         // in your project's settings, rather than globally.
-        "directories": [".env", "env", ".venv", "venv"],
+        "directories": [
+          ".env",
+          "env",
+          ".venv",
+          "venv"
+        ],
         // Can also be 'csh', 'fish', and `nushell`
         "activate_script": "default"
       }
@@ -431,7 +447,13 @@
     "lsp": "elixir_ls"
   },
   // Different settings for specific languages.
+  "indent_guides": {
+    "enabled":true
+  },
   "languages": {
+    "Python": {
+      "show_inline_completions": false,
+    },
     "Rust": {
       "show_copilot_suggestions": true
     },
@@ -462,6 +484,12 @@
       "tab_size": 2
     },
     "JSON": {
+      "tab_size": 2
+    },
+    "vue": {
+      "tab_size": 2
+    },
+    "HTML": {
       "tab_size": 2
     }
   },

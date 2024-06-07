@@ -58,4 +58,3 @@ ctrl + shift - 7: /opt/homebrew/bin/yabai -m window --space 7 && /opt/homebrew/b
 ctrl + shift - 8: /opt/homebrew/bin/yabai -m window --space 8 && /opt/homebrew/bin/yabai -m space --focus 8
 ctrl + shift - 9: /opt/homebrew/bin/yabai -m window --space 9 && /opt/homebrew/bin/yabai -m space --focus 9
 ctrl + shift - 0: /opt/homebrew/bin/yabai -m window --space 10 && /opt/homebrew/bin/yabai -m space --focus 10
-

@@ -361,15 +361,42 @@
   {
     "context": "Pane",
     "bindings": {
-      "alt-1": ["pane::ActivateItem", 0],
-      "alt-2": ["pane::ActivateItem", 1],
-      "alt-3": ["pane::ActivateItem", 2],
-      "alt-4": ["pane::ActivateItem", 3],
-      "alt-5": ["pane::ActivateItem", 4],
-      "alt-6": ["pane::ActivateItem", 5],
-      "alt-7": ["pane::ActivateItem", 6],
-      "alt-8": ["pane::ActivateItem", 7],
-      "alt-9": ["pane::ActivateItem", 8],
+      "alt-1": [
+        "pane::ActivateItem",
+        0
+      ],
+      "alt-2": [
+        "pane::ActivateItem",
+        1
+      ],
+      "alt-3": [
+        "pane::ActivateItem",
+        2
+      ],
+      "alt-4": [
+        "pane::ActivateItem",
+        3
+      ],
+      "alt-5": [
+        "pane::ActivateItem",
+        4
+      ],
+      "alt-6": [
+        "pane::ActivateItem",
+        5
+      ],
+      "alt-7": [
+        "pane::ActivateItem",
+        6
+      ],
+      "alt-8": [
+        "pane::ActivateItem",
+        7
+      ],
+      "alt-9": [
+        "pane::ActivateItem",
+        8
+      ],
       "ctrl-0": "pane::ActivateLastItem",
       "ctrl--": "pane::GoBack",
       "ctrl-_": "pane::GoForward",
@@ -430,14 +457,38 @@
   },
   {
     "bindings": {
-      "cmd-k cmd-left": ["workspace::ActivatePaneInDirection", "Left"],
-      "cmd-k cmd-right": ["workspace::ActivatePaneInDirection", "Right"],
-      "cmd-k cmd-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "cmd-k cmd-down": ["workspace::ActivatePaneInDirection", "Down"],
-      "cmd-k shift-left": ["workspace::SwapPaneInDirection", "Left"],
-      "cmd-k shift-right": ["workspace::SwapPaneInDirection", "Right"],
-      "cmd-k shift-up": ["workspace::SwapPaneInDirection", "Up"],
-      "cmd-k shift-down": ["workspace::SwapPaneInDirection", "Down"]
+      "cmd-k cmd-left": [
+        "workspace::ActivatePaneInDirection",
+        "Left"
+      ],
+      "cmd-k cmd-right": [
+        "workspace::ActivatePaneInDirection",
+        "Right"
+      ],
+      "cmd-k cmd-up": [
+        "workspace::ActivatePaneInDirection",
+        "Up"
+      ],
+      "cmd-k cmd-down": [
+        "workspace::ActivatePaneInDirection",
+        "Down"
+      ],
+      "cmd-k shift-left": [
+        "workspace::SwapPaneInDirection",
+        "Left"
+      ],
+      "cmd-k shift-right": [
+        "workspace::SwapPaneInDirection",
+        "Right"
+      ],
+      "cmd-k shift-up": [
+        "workspace::SwapPaneInDirection",
+        "Up"
+      ],
+      "cmd-k shift-down": [
+        "workspace::SwapPaneInDirection",
+        "Down"
+      ]
     }
   },
   // Bindings from Atom
@@ -564,31 +615,79 @@
       "cmd-v": "terminal::Paste",
       "cmd-k": "terminal::Clear",
       // Some nice conveniences
-      "cmd-backspace": ["terminal::SendText", "\u0015"],
-      "cmd-right": ["terminal::SendText", "\u0005"],
-      "cmd-left": ["terminal::SendText", "\u0001"],
+      "cmd-backspace": [
+        "terminal::SendText",
+        "\u0015"
+      ],
+      "cmd-right": [
+        "terminal::SendText",
+        "\u0005"
+      ],
+      "cmd-left": [
+        "terminal::SendText",
+        "\u0001"
+      ],
       // Terminal.app compatibility
-      "alt-left": ["terminal::SendText", "\u001bb"],
-      "alt-right": ["terminal::SendText", "\u001bf"],
+      "alt-left": [
+        "terminal::SendText",
+        "\u001bb"
+      ],
+      "alt-right": [
+        "terminal::SendText",
+        "\u001bf"
+      ],
       // There are conflicting bindings for these keys in the global context.
       // these bindings override them, remove at your own risk:
-      "up": ["terminal::SendKeystroke", "up"],
-      "pageup": ["terminal::SendKeystroke", "pageup"],
-      "down": ["terminal::SendKeystroke", "down"],
-      "pagedown": ["terminal::SendKeystroke", "pagedown"],
-      "escape": ["terminal::SendKeystroke", "escape"],
-      "enter": ["terminal::SendKeystroke", "enter"],
-      "ctrl-c": ["terminal::SendKeystroke", "ctrl-c"],
+      "up": [
+        "terminal::SendKeystroke",
+        "up"
+      ],
+      "pageup": [
+        "terminal::SendKeystroke",
+        "pageup"
+      ],
+      "down": [
+        "terminal::SendKeystroke",
+        "down"
+      ],
+      "pagedown": [
+        "terminal::SendKeystroke",
+        "pagedown"
+      ],
+      "escape": [
+        "terminal::SendKeystroke",
+        "escape"
+      ],
+      "enter": [
+        "terminal::SendKeystroke",
+        "enter"
+      ],
+      "ctrl-c": [
+        "terminal::SendKeystroke",
+        "ctrl-c"
+      ],
       "cmd-t": "workspace::NewTerminal"
     }
   },
   {
     "context": "Dock || Workspace || Editor || Pane || Terminal",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-h": [
+        "workspace::ActivatePaneInDirection",
+        "Left"
+      ],
+      "ctrl-l": [
+        "workspace::ActivatePaneInDirection",
+        "Right"
+      ],
+      "ctrl-k": [
+        "workspace::ActivatePaneInDirection",
+        "Up"
+      ],
+      "ctrl-j": [
+        "workspace::ActivatePaneInDirection",
+        "Down"
+      ],
       "alt-l": "workspace::ToggleBottomDock",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
@@ -601,7 +700,7 @@
       "alt-tab": "tab_switcher::Toggle",
       "alt-a": "editor::Format",
       "alt-d": "diagnostics::Deploy",
-      "alt-i": "editor::Hover",
+      "alt-i": "editor::Hover"
     }
   }
 ]
