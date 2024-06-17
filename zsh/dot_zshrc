@@ -3,12 +3,12 @@
 alias bs='brew services'
 alias cat='bat'
 alias bat='bat'
-alias vi='lvim'
-alias vim='lvim'
-alias nvim='lvim'
+alias vi='nvim'
+alias vim='nvim'
+alias nvim='nvim'
 alias python='python3'
 alias pip='pip3'
-alias a='lvim'
+alias a='nvim'
 alias rm=trash
 alias tl=trash-list
 alias tree='eza --tree --icons'

@@ -16,7 +16,7 @@
     "copilot": true
   },
   // The name of a font to use for rendering text in the editor
-  "buffer_font_family": "Berkeley Mono",
+  "buffer_font_family": "LigaBerkeleyMono Nerd Font",
   // The OpenType features to enable for text in the editor.
   "buffer_font_features": {
     // Disable ligatures:
@@ -36,11 +36,11 @@
   //         },
   "buffer_line_height": "comfortable",
   // The name of a font to use for rendering text in the UI
-  "ui_font_family": "Berkeley Mono",
+  "ui_font_family": "LigaBerkeleyMono Nerd Font",
   // The OpenType features to enable for text in the UI
   "ui_font_features": {
     // Disable ligatures:
-    "calt": true
+    "calt": false
   },
   // The default font size for text in the UI
   "ui_font_size": 17,
@@ -124,7 +124,7 @@
   // Inlay hint related settings
   "inlay_hints": {
     // Global switch to toggle hints on and off, switched off by default.
-    "enabled": true,
+    "enabled": false,
     // Toggle certain types of hints on and off, all switched on by default.
     "show_type_hints": true,
     "show_parameter_hints": true,
