@@ -1,13 +1,13 @@
 # change layout
-alt - e : /opt/homebrew/bin/yabai -m space --layout bsp
-alt - s : /opt/homebrew/bin/yabai -m space --layout float
+alt - e : yabai -m space --layout bsp
+alt - s : yabai -m space --layout float
 
 # floating windows
-alt + shift - space : /opt/homebrew/bin/yabai -m window --toggle float
-cmd + alt + ctrl + shift - n  : /opt/homebrew/bin/yabai -m window --toggle float&&/opt/homebrew/bin/yabai -m window --grid 12:12:1:1:10:10
+alt + shift - space : yabai -m window --toggle float
+cmd + alt + ctrl + shift - n  : yabai -m window --toggle float&&yabai -m window --grid 12:12:1:1:10:10
 
 # enter fullscreen mode for the focused container
-cmd + alt + ctrl + shift - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
+cmd + alt + ctrl + shift - f : yabai -m window --toggle zoom-fullscreen
 ####### Shortcut Hotkeys #############
 # cmd + alt + ctrl + shift = caps lock
 
@@ -15,46 +15,46 @@ cmd + alt + ctrl + shift - f : /opt/homebrew/bin/yabai -m window --toggle zoom-f
 cmd + alt + ctrl + shift - 0x24 : kitty --single-instance -d ~
 
 # restart Yabi, SpaceBar, and SKHD
-alt + shift - r : killall /opt/homebrew/bin/yabai&&/opt/homebrew/bin/yabai --start-service&&skhd --reload
+alt + shift - r : killall yabai&&yabai --start-service&&skhd --reload
 
 # Rotate workspace clockwise
-cmd + alt + ctrl + shift - 0x32 : /opt/homebrew/bin/yabai -m space --rotate 90
+cmd + alt + ctrl + shift - 0x32 : yabai -m space --rotate 90
 
 # focus windows
-cmd + alt + ctrl + shift - q : /opt/homebrew/bin/yabai -m window --focus next || /opt/homebrew/bin/yabai -m window --focus first
-cmd + alt + ctrl + shift - e : /opt/homebrew/bin/yabai -m window --focus prev || /opt/homebrew/bin/yabai -m window --focus last
+cmd + alt + ctrl + shift - q : yabai -m window --focus next || yabai -m window --focus first
+cmd + alt + ctrl + shift - e : yabai -m window --focus prev || yabai -m window --focus last
 
 # window resizing
-cmd + alt + ctrl + shift - w : /opt/homebrew/bin/yabai -m window --resize top:0:-20 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-20
-cmd + alt + ctrl + shift - s : /opt/homebrew/bin/yabai -m window --resize top:0:20 || /opt/homebrew/bin/yabai -m window --resize bottom:0:20
-cmd + alt + ctrl + shift - a : /opt/homebrew/bin/yabai -m window --resize left:-20:0 || /opt/homebrew/bin/yabai -m window --resize right:-20:0
-cmd + alt + ctrl + shift - d : /opt/homebrew/bin/yabai -m window --resize left:20:0 || /opt/homebrew/bin/yabai -m window --resize right:20:0
+cmd + alt + ctrl + shift - w : yabai -m window --resize top:0:-20 || yabai -m window --resize bottom:0:-20
+cmd + alt + ctrl + shift - s : yabai -m window --resize top:0:20 || yabai -m window --resize bottom:0:20
+cmd + alt + ctrl + shift - a : yabai -m window --resize left:-20:0 || yabai -m window --resize right:-20:0
+cmd + alt + ctrl + shift - d : yabai -m window --resize left:20:0 || yabai -m window --resize right:20:0
 
-cmd + alt + ctrl + shift - h : /opt/homebrew/bin/yabai -m window --focus west
-cmd + alt + ctrl + shift - j: /opt/homebrew/bin/yabai -m window --focus south
-cmd + alt + ctrl + shift - k: /opt/homebrew/bin/yabai -m window --focus north
-cmd + alt + ctrl + shift - l: /opt/homebrew/bin/yabai -m window --focus east
+cmd + alt + ctrl + shift - h : yabai -m window --focus west
+cmd + alt + ctrl + shift - j: yabai -m window --focus south
+cmd + alt + ctrl + shift - k: yabai -m window --focus north
+cmd + alt + ctrl + shift - l: yabai -m window --focus east
 
 
 # Switch spaces and move windows
-ctrl - 1: /opt/homebrew/bin/yabai -m space --focus 1
-ctrl - 2: /opt/homebrew/bin/yabai -m space --focus 2
-ctrl - 3: /opt/homebrew/bin/yabai -m space --focus 3
-ctrl - 4: /opt/homebrew/bin/yabai -m space --focus 4
-ctrl - 5: /opt/homebrew/bin/yabai -m space --focus 5
-ctrl - 6: /opt/homebrew/bin/yabai -m space --focus 6
-ctrl - 7: /opt/homebrew/bin/yabai -m space --focus 7
-ctrl - 8: /opt/homebrew/bin/yabai -m space --focus 8
-ctrl - 9: /opt/homebrew/bin/yabai -m space --focus 9
-ctrl - 0: /opt/homebrew/bin/yabai -m space --focus 10
+ctrl - 1: yabai -m space --focus 1
+ctrl - 2: yabai -m space --focus 2
+ctrl - 3: yabai -m space --focus 3
+ctrl - 4: yabai -m space --focus 4
+ctrl - 5: yabai -m space --focus 5
+ctrl - 6: yabai -m space --focus 6
+ctrl - 7: yabai -m space --focus 7
+ctrl - 8: yabai -m space --focus 8
+ctrl - 9: yabai -m space --focus 9
+ctrl - 0: yabai -m space --focus 10
 
-ctrl + shift - 1: /opt/homebrew/bin/yabai -m window --space 1 && /opt/homebrew/bin/yabai -m space --focus 1
-ctrl + shift - 2: /opt/homebrew/bin/yabai -m window --space 2 && /opt/homebrew/bin/yabai -m space --focus 2
-ctrl + shift - 3: /opt/homebrew/bin/yabai -m window --space 3 && /opt/homebrew/bin/yabai -m space --focus 3
-ctrl + shift - 4: /opt/homebrew/bin/yabai -m window --space 4 && /opt/homebrew/bin/yabai -m space --focus 4
-ctrl + shift - 5: /opt/homebrew/bin/yabai -m window --space 5 && /opt/homebrew/bin/yabai -m space --focus 5
-ctrl + shift - 6: /opt/homebrew/bin/yabai -m window --space 6 && /opt/homebrew/bin/yabai -m space --focus 6
-ctrl + shift - 7: /opt/homebrew/bin/yabai -m window --space 7 && /opt/homebrew/bin/yabai -m space --focus 7
-ctrl + shift - 8: /opt/homebrew/bin/yabai -m window --space 8 && /opt/homebrew/bin/yabai -m space --focus 8
-ctrl + shift - 9: /opt/homebrew/bin/yabai -m window --space 9 && /opt/homebrew/bin/yabai -m space --focus 9
-ctrl + shift - 0: /opt/homebrew/bin/yabai -m window --space 10 && /opt/homebrew/bin/yabai -m space --focus 10
+ctrl + shift - 1: yabai -m window --space 1 && yabai -m space --focus 1
+ctrl + shift - 2: yabai -m window --space 2 && yabai -m space --focus 2
+ctrl + shift - 3: yabai -m window --space 3 && yabai -m space --focus 3
+ctrl + shift - 4: yabai -m window --space 4 && yabai -m space --focus 4
+ctrl + shift - 5: yabai -m window --space 5 && yabai -m space --focus 5
+ctrl + shift - 6: yabai -m window --space 6 && yabai -m space --focus 6
+ctrl + shift - 7: yabai -m window --space 7 && yabai -m space --focus 7
+ctrl + shift - 8: yabai -m window --space 8 && yabai -m space --focus 8
+ctrl + shift - 9: yabai -m window --space 9 && yabai -m space --focus 9
+ctrl + shift - 0: yabai -m window --space 10 && yabai -m space --focus 10
