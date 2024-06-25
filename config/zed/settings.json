@@ -419,7 +419,7 @@
     // "font_size": "15",
     // Set the terminal's font family. If this option is not included,
     // the terminal will default to matching the buffer's font family.
-    "font_family": "Liga SFMono Nerd Font"
+    "font_family": "CommitMono Nerd Font Propo"
   },
   // Difference settings for semantic_index
   "semantic_index": {
