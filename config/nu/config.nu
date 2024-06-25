@@ -1,1 +1,0 @@
-/Users/tnixc/Library/Application Support/nushell/config.nu

@@ -700,7 +700,8 @@
       "alt-tab": "tab_switcher::Toggle",
       "alt-a": "editor::Format",
       "alt-d": "diagnostics::Deploy",
-      "alt-i": "editor::Hover"
+      "alt-i": "editor::Hover",
+      "alt-n": "editor::AcceptInlineCompletion"
     }
   }
 ]
