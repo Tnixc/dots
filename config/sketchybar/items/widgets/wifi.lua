@@ -22,7 +22,7 @@ local wifi_up = sbar.add("item", "widgets.wifi1", {
   },
   label = {
     font = {
-      family = settings.font.numbers,
+      family = "BerkeleyMono Nerd Font",
       style = settings.font.style_map["Bold"],
       size = 9.0,
     },
@@ -45,7 +45,7 @@ local wifi_down = sbar.add("item", "widgets.wifi2", {
   },
   label = {
     font = {
-      family = settings.font.numbers,
+        family = "BerkeleyMono Nerd Font",
       style = settings.font.style_map["Bold"],
       size = 9.0,
     },
@@ -57,7 +57,7 @@ local wifi_down = sbar.add("item", "widgets.wifi2", {
 
 local wifi = sbar.add("item", "widgets.wifi.padding", {
   position = "right",
-  label = { drawing = false },
+  label = { drawing = true, string = [[HERE]] },
 })
 
 -- Background around the item
@@ -182,6 +182,17 @@ wifi:subscribe({"wifi_change", "system_woke"}, function(env)
         color = connected and colors.white or colors.red,
       },
     })
+    if connected then
+      sbar.exec("ipconfig getsummary en0 | awk -F ' SSID : '  '/ SSID : / {print $2}'", function(ssid_result)
+        wifi:set({
+          label = { string = ssid_result }
+        })
+      end)
+    else
+      wifi:set({
+        label = { string = "Disconnected" }
+      })
+    end
   end)
 end)
 
