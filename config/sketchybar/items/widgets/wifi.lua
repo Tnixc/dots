@@ -22,7 +22,7 @@ local wifi_up = sbar.add("item", "widgets.wifi1", {
   },
   label = {
     font = {
-      family = "BerkeleyMono Nerd Font",
+      family = settings.font.mono,
       style = settings.font.style_map["Bold"],
       size = 9.0,
     },
@@ -45,7 +45,7 @@ local wifi_down = sbar.add("item", "widgets.wifi2", {
   },
   label = {
     font = {
-        family = "BerkeleyMono Nerd Font",
+        family = settings.font.mono,
       style = settings.font.style_map["Bold"],
       size = 9.0,
     },
