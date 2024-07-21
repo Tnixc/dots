@@ -1,3 +1,3 @@
 # Dotfiles for macOS
 
-currently under works
+Migrated to https://github.com/tnixc/nix-config
